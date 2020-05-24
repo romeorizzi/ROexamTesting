@@ -1,0 +1,80 @@
+2020-05-24 16:07:35,761 [1760] DEBUG    root:75: [JupyterRequire] Loading Jupyter Require extension.
+2020-05-24 16:07:35,761 [1760] DEBUG    root:93: [JupyterRequire] Initializing comms.
+2020-05-24 16:07:35,762 [1760] INFO     root:247: [JupyterRequire] Initializing comms.
+2020-05-24 16:07:35,763 [1760] DEBUG    root:197: [JupyterRequire] Configuration requested: {'paths': {}, 'shim': None}
+2020-05-24 16:07:35,763 [1760] INFO     root:271: [JupyterRequire] Comms have been successfully initialized.
+2020-05-24 16:07:35,764 [1760] DEBUG    root:97: [JupyterRequire] Registering comm targets.
+2020-05-24 16:07:36,271 [1760] DEBUG    root:75: [JupyterRequire] Loading Jupyter Require extension.
+2020-05-24 16:07:36,271 [1760] DEBUG    root:93: [JupyterRequire] Initializing comms.
+2020-05-24 16:07:36,271 [1760] INFO     root:247: [JupyterRequire] Initializing comms.
+2020-05-24 16:07:36,273 [1760] DEBUG    root:197: [JupyterRequire] Configuration requested: {'paths': {}, 'shim': None}
+2020-05-24 16:07:36,273 [1760] INFO     root:271: [JupyterRequire] Comms have been successfully initialized.
+2020-05-24 16:07:36,273 [1760] DEBUG    root:97: [JupyterRequire] Registering comm targets.
+2020-05-24 16:07:40,231 [1760] ERROR    root:709: [JupyterRequire] File `'exercise_graph/script/load_config.py'` not found.
+2020-05-24 16:07:40,697 [1760] ERROR    root:709: [JupyterRequire] File `'exercise_graph/script/load_config.py'` not found.
+2020-05-24 16:07:40,810 [1760] ERROR    root:709: [JupyterRequire] File `'../lib/pygraph/parserx.py'` not found.
+2020-05-24 16:07:40,811 [1760] ERROR    root:709: [JupyterRequire] File `'../lib/pygraph/tools_choice.py'` not found.
+2020-05-24 16:07:40,924 [1760] ERROR    root:709: [JupyterRequire] File `'../lib/pygraph/tools_choice.py'` not found.
+2020-05-24 16:07:40,925 [1760] ERROR    root:709: [JupyterRequire] File `'../lib/pygraph/parserx.py'` not found.
+2020-05-24 16:07:40,926 [1760] ERROR    root:709: [JupyterRequire] File `'../lib/pygraph/json_to_nx.py'` not found.
+2020-05-24 16:07:40,926 [1760] ERROR    root:709: [JupyterRequire] File `'exercise_graph/verifier/v_1.py'` not found.
+2020-05-24 16:08:20,502 [8500] DEBUG    root:75: [JupyterRequire] Loading Jupyter Require extension.
+2020-05-24 16:08:20,503 [8500] DEBUG    root:93: [JupyterRequire] Initializing comms.
+2020-05-24 16:08:20,503 [8500] INFO     root:247: [JupyterRequire] Initializing comms.
+2020-05-24 16:08:20,504 [8500] DEBUG    root:197: [JupyterRequire] Configuration requested: {'paths': {}, 'shim': None}
+2020-05-24 16:08:20,504 [8500] INFO     root:271: [JupyterRequire] Comms have been successfully initialized.
+2020-05-24 16:08:20,504 [8500] DEBUG    root:97: [JupyterRequire] Registering comm targets.
+2020-05-24 16:08:21,010 [8500] DEBUG    root:75: [JupyterRequire] Loading Jupyter Require extension.
+2020-05-24 16:08:21,010 [8500] DEBUG    root:93: [JupyterRequire] Initializing comms.
+2020-05-24 16:08:21,011 [8500] INFO     root:247: [JupyterRequire] Initializing comms.
+2020-05-24 16:08:21,012 [8500] DEBUG    root:197: [JupyterRequire] Configuration requested: {'paths': {}, 'shim': None}
+2020-05-24 16:08:21,012 [8500] INFO     root:271: [JupyterRequire] Comms have been successfully initialized.
+2020-05-24 16:08:21,012 [8500] DEBUG    root:97: [JupyterRequire] Registering comm targets.
+2020-05-24 16:08:22,313 [8500] ERROR    root:709: [JupyterRequire] File `'exercise_graph/script/load_config.py'` not found.
+2020-05-24 16:08:22,788 [8500] ERROR    root:709: [JupyterRequire] File `'exercise_graph/script/load_config.py'` not found.
+2020-05-24 16:08:23,043 [8500] ERROR    root:709: [JupyterRequire] File `'exercise_graph/verifier/v_1.py'` not found.
+2020-05-24 16:08:25,397 [8500] ERROR    root:709: [JupyterRequire] File `'exercise_graph/script/load_config.py'` not found.
+2020-05-24 16:08:25,631 [8500] ERROR    root:709: [JupyterRequire] File `'exercise_graph/verifier/v_1.py'` not found.
+2020-05-24 16:08:25,861 [8500] ERROR    root:709: [JupyterRequire] File `'exercise_graph/script/load_config.py'` not found.
+2020-05-24 16:08:26,097 [8500] ERROR    root:709: [JupyterRequire] File `'exercise_graph/verifier/v_1.py'` not found.
+2020-05-24 16:09:08,751 [12480] DEBUG    root:75: [JupyterRequire] Loading Jupyter Require extension.
+2020-05-24 16:09:08,751 [12480] DEBUG    root:93: [JupyterRequire] Initializing comms.
+2020-05-24 16:09:08,751 [12480] INFO     root:247: [JupyterRequire] Initializing comms.
+2020-05-24 16:09:08,753 [12480] DEBUG    root:197: [JupyterRequire] Configuration requested: {'paths': {}, 'shim': None}
+2020-05-24 16:09:08,753 [12480] INFO     root:271: [JupyterRequire] Comms have been successfully initialized.
+2020-05-24 16:09:08,754 [12480] DEBUG    root:97: [JupyterRequire] Registering comm targets.
+2020-05-24 16:09:09,260 [12480] DEBUG    root:75: [JupyterRequire] Loading Jupyter Require extension.
+2020-05-24 16:09:09,260 [12480] DEBUG    root:93: [JupyterRequire] Initializing comms.
+2020-05-24 16:09:09,260 [12480] INFO     root:247: [JupyterRequire] Initializing comms.
+2020-05-24 16:09:09,262 [12480] DEBUG    root:197: [JupyterRequire] Configuration requested: {'paths': {}, 'shim': None}
+2020-05-24 16:09:09,262 [12480] INFO     root:271: [JupyterRequire] Comms have been successfully initialized.
+2020-05-24 16:09:09,262 [12480] DEBUG    root:97: [JupyterRequire] Registering comm targets.
+2020-05-24 16:09:12,386 [12480] ERROR    root:709: [JupyterRequire] File `'exercise_graph/script/load_config.py'` not found.
+2020-05-24 16:09:12,654 [12480] ERROR    root:709: [JupyterRequire] File `'exercise_graph/verifier/v_1.py'` not found.
+2020-05-24 16:09:12,861 [12480] ERROR    root:709: [JupyterRequire] File `'exercise_graph/script/load_config.py'` not found.
+2020-05-24 16:09:13,096 [12480] ERROR    root:709: [JupyterRequire] File `'exercise_graph/verifier/v_1.py'` not found.
+2020-05-24 16:09:33,922 [12480] ERROR    root:709: [JupyterRequire] File `'exercise_graph/script/load_config.py'` not found.
+2020-05-24 16:11:09,237 [7548] DEBUG    root:75: [JupyterRequire] Loading Jupyter Require extension.
+2020-05-24 16:11:09,238 [7548] DEBUG    root:93: [JupyterRequire] Initializing comms.
+2020-05-24 16:11:09,238 [7548] INFO     root:247: [JupyterRequire] Initializing comms.
+2020-05-24 16:11:09,239 [7548] DEBUG    root:197: [JupyterRequire] Configuration requested: {'paths': {}, 'shim': None}
+2020-05-24 16:11:09,240 [7548] INFO     root:271: [JupyterRequire] Comms have been successfully initialized.
+2020-05-24 16:11:09,240 [7548] DEBUG    root:97: [JupyterRequire] Registering comm targets.
+2020-05-24 16:11:09,747 [7548] DEBUG    root:75: [JupyterRequire] Loading Jupyter Require extension.
+2020-05-24 16:11:09,747 [7548] DEBUG    root:93: [JupyterRequire] Initializing comms.
+2020-05-24 16:11:09,747 [7548] INFO     root:247: [JupyterRequire] Initializing comms.
+2020-05-24 16:11:09,748 [7548] DEBUG    root:197: [JupyterRequire] Configuration requested: {'paths': {}, 'shim': None}
+2020-05-24 16:11:09,749 [7548] INFO     root:271: [JupyterRequire] Comms have been successfully initialized.
+2020-05-24 16:11:09,749 [7548] DEBUG    root:97: [JupyterRequire] Registering comm targets.
+2020-05-24 16:11:43,580 [11192] DEBUG    root:75: [JupyterRequire] Loading Jupyter Require extension.
+2020-05-24 16:11:43,580 [11192] DEBUG    root:93: [JupyterRequire] Initializing comms.
+2020-05-24 16:11:43,580 [11192] INFO     root:247: [JupyterRequire] Initializing comms.
+2020-05-24 16:11:43,582 [11192] DEBUG    root:197: [JupyterRequire] Configuration requested: {'paths': {}, 'shim': None}
+2020-05-24 16:11:43,582 [11192] INFO     root:271: [JupyterRequire] Comms have been successfully initialized.
+2020-05-24 16:11:43,582 [11192] DEBUG    root:97: [JupyterRequire] Registering comm targets.
+2020-05-24 16:11:44,090 [11192] DEBUG    root:75: [JupyterRequire] Loading Jupyter Require extension.
+2020-05-24 16:11:44,091 [11192] DEBUG    root:93: [JupyterRequire] Initializing comms.
+2020-05-24 16:11:44,091 [11192] INFO     root:247: [JupyterRequire] Initializing comms.
+2020-05-24 16:11:44,092 [11192] DEBUG    root:197: [JupyterRequire] Configuration requested: {'paths': {}, 'shim': None}
+2020-05-24 16:11:44,093 [11192] INFO     root:271: [JupyterRequire] Comms have been successfully initialized.
+2020-05-24 16:11:44,093 [11192] DEBUG    root:97: [JupyterRequire] Registering comm targets.

@@ -1,0 +1,56 @@
+<?xml version="1.0" ?>
+<graphml xmlns="http://graphml.graphdrawing.org/xmlns" xmlns:java="http://www.yworks.com/xml/yfiles-common/1.0/java" xmlns:sys="http://www.yworks.com/xml/yfiles-common/markup/primitives/2.0" xmlns:x="http://www.yworks.com/xml/yfiles-common/markup/2.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:y="http://www.yworks.com/xml/graphml" xmlns:yed="http://www.yworks.com/xml/yed/3" xsi:schemaLocation="http://graphml.graphdrawing.org/xmlns http://www.yworks.com/xml/schema/graphml/1.1/ygraphml.xsd">
+	<key for="node" id="data_node" yfiles.type="nodegraphics"/>
+	<key for="edge" id="data_edge" yfiles.type="edgegraphics"/>
+	<graph edgedefault="directed" id="G">
+		<node id="b1">
+			<data key="data_node">
+				<y:ShapeNode>
+					<y:Geometry height="35.2778" width="35.2778" x="-17.6389" y="-17.6389"/>
+					<y:Fill color="#ff00003c" transparent="false"/>
+					<y:BorderStyle color="#000000" type="line" width="1.0"/>
+					<y:NodeLabel fontFamily="Dialog" fontSize="20" fontStyle="plain" underlinedText="false"/>
+					<y:Shape type="rectangle"/>
+				</y:ShapeNode>
+			</data>
+		</node>
+		<node id="b2">
+			<data key="data_node">
+				<y:ShapeNode>
+					<y:Geometry height="35.2778" width="35.2778" x="82.3611" y="-17.6389"/>
+					<y:Fill color="#ff00003c" transparent="false"/>
+					<y:BorderStyle color="#000000" type="line" width="1.0"/>
+					<y:NodeLabel fontFamily="Dialog" fontSize="20" fontStyle="plain" underlinedText="false"/>
+					<y:Shape type="rectangle"/>
+				</y:ShapeNode>
+			</data>
+		</node>
+		<node id="b1_1">
+			<data key="data_node">
+				<y:ShapeNode>
+					<y:Geometry height="35.2778" width="35.2778" x="182.36110000000002" y="-217.63889999999998"/>
+					<y:Fill color="#0000ff3c" transparent="false"/>
+					<y:BorderStyle color="#000000" type="line" width="1.0"/>
+					<y:NodeLabel fontFamily="Dialog" fontSize="20" fontStyle="plain" underlinedText="false"/>
+					<y:Shape type="rectangle"/>
+				</y:ShapeNode>
+			</data>
+		</node>
+		<edge id="b1_b2" source="b1" target="b2">
+			<data key="data_edge">
+				<y:PolyLineEdge>
+					<y:Arrows source="standard" target="standard"/>
+					<y:LineStyle color="#000000" type="line" width="1"/>
+				</y:PolyLineEdge>
+			</data>
+		</edge>
+		<edge id="b1_1_b2" source="b1_1" target="b2">
+			<data key="data_edge">
+				<y:PolyLineEdge>
+					<y:Arrows source="none" target="none"/>
+					<y:LineStyle color="#000000" type="line" width="1"/>
+				</y:PolyLineEdge>
+			</data>
+		</edge>
+	</graph>
+</graphml>
