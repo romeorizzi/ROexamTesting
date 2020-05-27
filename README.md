@@ -34,7 +34,8 @@ Quando ti dovesse interessare la possibilità di contribuire attivamente in un p
 5. Se sei bloccato e lo reputi più efficace, scrivi direttamente nel gruppo Telegram dei beta-tester,
    cui puoi auto-iscriverti al link:
 ```
-   ANCORA DA FARE
+   https://t.me/joinchat/EDaVmBl39deQMumY7g8U8w
 ```
+   Vi ringraziamo per ogni spunto, feedback, o richiesta di aiuto.
 
  
