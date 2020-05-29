@@ -12,26 +12,29 @@ L'uso di questo strumento potrebbe rivelarsi il compagno ideale per chi non vuol
    Buona notizia: se ti sei installato Anaconda hai già, e già correttamente installato,
    il software che serve per far girare i Jupyther Notebook
    sulla tua macchina e dentro il tuo browser.
-   In caso contario, ti consigliamo di tornare al punto~1 della presente lista, anche se sei già nella situazione che i Jupyther Notebook girano correttamente sulla tua macchina.
+   In caso contario, ti consigliamo di tornare al punto 1 della presente lista, anche se sei già nella situazione che i Jupyther Notebook girano correttamente sulla tua macchina.
    Se non vuoi installarti Anaconda perchè non hai spazio per installarti tutto quel ben di dio, considera la possibilità di installarti `conda`, la sua versione mignon pensata proprio per chi avesse questi problemi.
 
    ok, come prerequisito non ti basta avere che i Jupyther Notebook girino correttamente sulla tua macchina ma è anche utile che tu abbia almeno una vaga idea di cosa puoi farci (anche al di là di questo esame) e acquisisca una conoscenza base di come muoversi entro essi.
-  Al link [Jupyther Notebook](https://jupyter.readthedocs.io/en/latest/) dato sopra non solo trovi come eseguire l'installazione ma anche dei tutorial che ti converrà esplorare almeno per un primo acclimatamento nell'ambiente e comprenderne le potenzialità che potrebbero servirti prima come studente e poi nella tua carriera.
-   Se conosci già l'ambiente dei Jupyther Notebook col quale comunque ti consigliamo di muovere i tuoi primi passi, forse porebbe interessarti utilizzare invece  
+  Al link [Jupyther Notebook](https://jupyter.readthedocs.io/en/latest/) dato sopra non solo trovi come eseguire l'installazione ma anche dei tutorial che ti converrà esplorare (solo in piccolissima parte, limitati alla punta dell'iceberg) almeno per un primo acclimatamento nell'ambiente e comprenderne le potenzialità che potrebbero servirti prima come studente e poi nella tua carriera.
+   Se conosci già l'ambiente dei Jupyther Notebook col quale comunque ti consigliamo di muovere i tuoi primi passi, e appena ti senti abbastanza sicuro e spavaldo, forse porebbe interessarti utilizzare invece  
    [JupytherLab](https://jupyterlab.readthedocs.io/en/stable/) che offre diversi vantaggi ed anche è incluso nella distribuzione di Anaconda.
 
 3. I Jupyther Notebooks non girano da remoto ma in locale. Devi pertanto ricopiarti in locale il contenuto di questo repo, ossia i materiali specifici all'esame (esercizi ed infrastruttura).
    Vi sono due principali alternative su come farlo,
-   esplorate nell'appendice <a href="#ricopiaInLocale">Come Ricopiare questo repo in locale</a> in calce a questo documento (file `README.md` del repo in questione).
+   esplorate nell'appendice <a href="#ricopiaInLocale">Come Ricopiare questo repo in locale</a> in calce a questo documento (siamo nel file `README.md` del repo in questione).
 
-4. Scaricati in locale i contenuti specifici all'esame, devi installare le librerie di infrastruttura e settare un ambiente dove mandare in esecuzione il tutto.
+4. Attenzione: non basta scaricarsi in locale i contenuti specifici all'esame, devi anche installare le librerie di infrastruttura e settare un ambiente dove mandare in esecuzione il tutto.
+   Una cosa buona è che in realtà queste due fasi (punti 3 e 4) sono in tutto indipendenti, puoi eseguirle nell'ordine che preferisci o condurle in modo indipendente o in parallelo, avanzando con una intanto che ti rispondiamo a una richiesta di aiuto sull'altra.
+
+   Come procedere su 4?
    Portati nella cartella `ROexamTesting/config/`
    e leggi il file `how_to_start.md` e seguine le indicazioni per predisporre l'ambiente.
    Due buone notizie:
 
   -  compresi i semplici concetti di base (che potranno servirti anche altrove) serve poi solo un pizzico di auto-disciplina a metterli in pratica per evitare ogni possibile difficoltà nelle installazioni;
 
-  -  l'ambiente non dovrebbe richiedere tanti aggiornamenti quanti i contenuti.
+  -  l'ambiente non dovrebbe richiedere tanti aggiornamenti quanti i contenuti (e tra 3 e 4 vale l'indipendenza di cui sopra).
 
   Resta però importante tu comprenda cosa siano gli _environment_ e te ne crei uno specifico per l'esame di Ricerca Operativa. In realtà ti converrà avvalerti di questo stesso strumento anche in altri contesti per evitare conflitti tra le librerie che installi sulla tua macchina.
 
