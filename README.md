@@ -7,11 +7,12 @@ Il repo contiene istruzioni a vario livello ed anche temi fac-simile per quello 
 1. Ti consigliamo di installarti innanzitutto [Anaconda Individual Edition](https://jupyterlab.readthedocs.io/en/stable/), una componente non necessaria ma che ti potrà rendere le cose più facili, specie se sei inesperto nel gestire le installazioni e gli ambienti, e ti consentirà agevolmente un ventaglio di possibilità ulteriori.
 Un ambiente che ti renderà particolarmente agevole gestire gli environment e sperimentare una grande varietà di applicazioni che potrebbero esserti interessanti anche in altre occasioni è l'[Anaconda Navigator](https://docs.anaconda.com/anaconda/navigator/).
 L'uso di questo strumento potrebbe rivelarsi il compagno ideale per chi non vuole gestire le cose da terminale.
+
 Se hai Windows, ti consigliamo di aggiungere i seguenti percorsi alla variabile d'ambiente di sistema Path (percorso: Sistema -> Impostazioni di sistema avanzate -> Variabili di ambiente -> Variabili di ambiente di sistema -> Selezionare Path e cliccare su Modifica):<br>
 C:\PERCORSO\anaconda3<br>
 C:\PERCORSO\anaconda3\Scripts<br>
 C.\PERCORSO\anaconda3\Library\bin<br>
-dove PERCORSO indica la cartella dove si trova anaconda (solitamente è qualcosa come C:\Users\tuousername\anaconda3).
+dove PERCORSO indica la cartella dove si trova Anaconda (solitamente è qualcosa come C:\Users\tuousername\anaconda3).
 Questo ti consentirà di poter lanciare python e jupyter-notebook da qualsiasi directory del tuo pc.
 
 2. Il tuo esame avverrà dentro un [Jupyter Notebook](https://jupyter.readthedocs.io/en/latest/) su cui lavorerai sulla tua macchina, dentro il browser.
