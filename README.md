@@ -2,33 +2,57 @@
 In questo repo organizziamo il punto di incontro tra gli sviluppatori e gli studenti coinvolti nel beta-testing di quello che sarà il sistema per i temi dell'esame di Ricerca Operativa 2020.
 Il repo contiene istruzioni a vario livello ed anche temi fac-simile per quello che sarà l'esame.
 
-## Prime istruzioni
+## Prime istruzioni e Workflow entro il quale operare
 
-1. I Jupyther Notebooks non girano da remoto e, pertanto,
-   come prima cosa da fare, devi ricopiarti il contenuto di questo repo in locale.
+1. Ti consigliamo di installarti innanzitutto [Anaconda Individual Edition](https://jupyterlab.readthedocs.io/en/stable/), una componente invero non necessaria ma che ti potrà rendere le cose più facili, specie se sei inesperto nel gestire le installazioni e gli ambienti, e ti consentirà agevolmente un ventaglio di possibilità ulteriori.
+Un ambiente che ti renderà particolarmente agevole gestire gli environment e sperimentare una grande varietà di applicazioni che potrebbero esserti interessanti anche in altre occasioni è l'[Anaconda Navigator](https://docs.anaconda.com/anaconda/navigator/).
+L'uso di questo strumento potrebbe rivelarsi il compagno ideale per chi non vuole gestire le cose da terminale.  
+
+2. Il tuo esame avverrà dentro un [Jupyther Notebook](https://jupyter.readthedocs.io/en/latest/) con cui interagirai sulla tua macchina, dentro il browser.
+   Buona notizia: se ti sei installato Anaconda hai già, e già correttamente installato,
+   il software che serve per far girare i Jupyther Notebook
+   sulla tua macchina e dentro il tuo browser.
+   In caso contario, ti consigliamo di tornare al punto~1 della presente lista, anche se sei già nella situazione che i Jupyther Notebook girano correttamente sulla tua macchina.
+   Se non vuoi installarti Anaconda perchè non hai spazio per installarti tutto quel ben di dio, considera la possibilità di installarti `conda`, la sua versione mignon pensata proprio per chi avesse questi problemi.
+
+   ok, come prerequisito non ti basta avere che i Jupyther Notebook girino correttamente sulla tua macchina ma è anche utile che tu abbia almeno una vaga idea di cosa puoi farci (anche al di là di questo esame) e acquisisca una conoscenza base di come muoversi entro essi.
+  Al link [Jupyther Notebook](https://jupyter.readthedocs.io/en/latest/) dato sopra non solo trovi come eseguire l'installazione ma anche dei tutorial che ti converrà esplorare almeno per un primo acclimatamento nell'ambiente e comprenderne le potenzialità che potrebbero servirti prima come studente e poi nella tua carriera.
+   Se conosci già l'ambiente dei Jupyther Notebook col quale comunque ti consigliamo di muovere i tuoi primi passi, forse porebbe interessarti utilizzare invece  
+   [JupytherLab](https://jupyterlab.readthedocs.io/en/stable/) che offre diversi vantaggi ed anche è incluso nella distribuzione di Anaconda.
+
+3. I Jupyther Notebooks non girano da remoto ma in locale. Devi pertanto ricopiarti in locale il contenuto di questo repo, ossia i materiali specifici all'esame (esercizi ed infrastruttura).
    Vi sono due principali alternative su come farlo,
-   esplorate nell'appendice <a href="#ricopiaInLocale">Come Ricopiare questo repo in locale, e come mantenerne aggiornato nei contenuti</a>
+   esplorate nell'appendice <a href="#ricopiaInLocale">Come Ricopiare questo repo in locale</a> in calce a questo documento (file `README.md` del repo in questione).
 
-2. Portati nella cartella `ROexamTesting/config/`
+4. Scaricati in locale i contenuti specifici all'esame, devi installare le librerie di infrastruttura e settare un ambiente dove mandare in esecuzione il tutto.
+   Portati nella cartella `ROexamTesting/config/`
    e leggi il file `how_to_start.md` e seguine le indicazioni per predisporre l'ambiente.
+   Due buone notizie:
 
-3. dalla cartella `ROexamTesting`, una volta attivato l'ambiente,
+  -  compresi i semplici concetti di base (che potranno servirti anche altrove) serve poi solo un pizzico di auto-disciplina a metterli in pratica per evitare ogni possibile difficoltà nelle installazioni;
+
+  -  l'ambiente non dovrebbe richiedere tanti aggiornamenti quanti i contenuti.
+
+  Resta però importante tu comprenda cosa siano gli _environment_ e te ne crei uno specifico per l'esame di Ricerca Operativa. In realtà ti converrà avvalerti di questo stesso strumento anche in altri contesti per evitare conflitti tra le librerie che installi sulla tua macchina.
+
+5. dalla cartella `ROexamTesting`, una volta attivato l'ambiente che hai creato appositamente,
    lancia `jupyter-notebook` ed utilizza Jupyther nel browser
    per visualizzare e testare i notebooks con gli esercizi.
 
-4. Se rilevi un problema nell'utilizzo dei notebooks con gli esercizi,
+6. Se rilevi un problema nell'utilizzo dei notebooks con gli esercizi,
    o dei malfunzionamenti nel sistema sviluppato per l'esame,
-   utilizza i meccanismi di GitHub per facilitare la collaborazione:
-   apri una issue nel repo per richiedere le nostre correzioni od integrazioni.
+   o semplicemente ti serve aiuto,
+   scrivi direttamente nel gruppo Telegram dei beta-tester,
+      cui puoi auto-iscriverti al link:
+   ```
+      https://t.me/joinchat/EDaVmBl39deQMumY7g8U8w
+   ```
+      In alternativa, ti incoraggiamo ad utilizzare anche per questo i meccanismi di GitHub per facilitare la collaborazione:
+      apri una issue nel repo per richiedere le nostre correzioni od integrazioni (vedi la tag "Issues" in cima a questa pagina di GitHub).
 
-5. Se sei bloccato e lo reputi più efficace, scrivi direttamente nel gruppo Telegram dei beta-tester,
-   cui puoi auto-iscriverti al link:
-```
-   https://t.me/joinchat/EDaVmBl39deQMumY7g8U8w
-```
-   Vi ringraziamo per ogni spunto, feedback, o richiesta di aiuto.
+      In ogni caso, _vi ringraziamo per ogni spunto, feedback, o richiesta di aiuto_.
 
-# Appendice: Come Ricopiare questo repo in locale, e come mantenerne aggiornato nei contenuti
+## Appendice: Come Ricopiare questo repo in locale (e come mantenerlo aggiornato nei contenuti)
 
 <a name="ricopiaInLocale">Il modo più rapido e flessibile</a>
     per farlo è lanciare il seguente comando da terminale:
