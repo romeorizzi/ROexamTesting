@@ -22,12 +22,12 @@ Il repo contiene istruzioni a vario livello ed anche temi fac-simile per quello 
     Per modificare `Path` fai (Sistema -> Impostazioni di sistema avanzate -> Variabili di ambiente -> Variabili di ambiente di sistema -> Selezionare Path e cliccare su Modifica).
     Trovi a questi link istruzioni più dettagliate e specifiche alla tua versione di Windows:
     [inglese](https://www.computerhope.com/issues/ch000549.htm), [italiano](http://new345.altervista.org/Dispense/Impostare_PATH_Win10.pdf),
-    [italiano, altri approcci](https://turbolab.it/windows-10/guida-windows-10-come-modificare-variabile-sistema-path-aggiungere-cartella-percorso-directory-variabile-ambiente-2560).
+    [italiano altri approcci](https://turbolab.it/windows-10/guida-windows-10-come-modificare-variabile-sistema-path-aggiungere-cartella-percorso-directory-variabile-ambiente-2560).
    ---
 
 2. Il tuo esame avverrà dentro `Jupyter Notebook`.
    Buona notizia: se hai installato Anaconda hai già, e già correttamente installato,
-   il software che consente di fare questo.
+   il software che consente di gestire i Jupyter Notebooks.
    In caso contario, ti consigliamo di tornare al punto 1 della presente lista
    anche se i Jupyter Notebook girano già correttamente sulla tua macchina.
    Oltre ad offrirti ulteriori possibilità Anaconda facilita infatti le operazioni
@@ -35,8 +35,8 @@ Il repo contiene istruzioni a vario livello ed anche temi fac-simile per quello 
    Se non vuoi installarti Anaconda perchè non hai spazio sul disco, considera la possibilità di installarti `conda`, la sua versione mignon pensata proprio per chi avesse questi problemi.
 
    Un fatto: come prerequisito non è sufficiente avere che i Jupyter Notebook girino correttamente sulla tua macchina, ma è anche utile che tu abbia almeno una vaga idea di cosa puoi farci (utile anche al di là di questo esame) e acquisisca una conoscenza base di come muoversi entro essi.
-   Al link [Jupyter Notebook](https://jupyter.readthedocs.io/en/latest/) dato sopra non solo trovi come eseguire l'installazione ma anche dei tutorial da esplorare (limitati alla punta dell'iceberg).
-Sfruttali per ottenere in tempi rapidi un primo acclimatamento nell'ambiente e comprenderne le potenzialità che potrebbero servirti prima come studente e poi nella tua carriera.
+   Al link [Jupyter Notebook](https://jupyter.readthedocs.io/en/latest/) dato sopra non solo trovi come eseguire l'installazione ma anche dei tutorial da esplorare.
+   Non esagerare, limitati alla punta dell'iceberg. Sfrutta però questi pratici materiali per ottenere in tempi rapidi un primo acclimatamento nell'ambiente e comprenderne da subito le potenzialità (per altro potrebbero servirti altrove, prima come studente e poi nella tua carriera).
    Se conosci già l'ambiente dei Jupyter Notebook (col quale comunque ti consigliamo di muovere i tuoi primi passi), appena ti senti abbastanza sicuro e spavaldo, forse potrebbe interessarti utilizzare invece  
    [JupyterLab](https://jupyterlab.readthedocs.io/en/stable/) che offre diversi vantaggi. Anche esso è incluso nella distribuzione di Anaconda.
 
@@ -51,11 +51,9 @@ Pertanto, quando sarà il momento del vero esame, non dovrai installare nulla ma
    Come procedere su 4?
    Portati nella cartella `ROexamTesting/config/`
    e leggi il file `how_to_start.md` e seguine le indicazioni per predisporre l'ambiente.
-   Due buone notizie:
+   La buona notizia:
 
     * compresi i semplici concetti di base (che potranno servirti anche altrove) serve poi solo un pizzico di auto-disciplina a metterli in pratica per evitare ogni possibile difficoltà nelle installazioni;
-
-    * l'ambiente non dovrebbe richiedere tanti aggiornamenti quanti i contenuti (e tra 3 e 4 vale l'indipendenza di cui sopra).
 
    Resta però importante tu comprenda cosa siano gli _environment_ e te ne crei uno specifico per l'esame di Ricerca Operativa. In realtà ti converrà avvalerti di questo stesso strumento anche in altri contesti per evitare conflitti tra le librerie che installi sulla tua macchina.
 
