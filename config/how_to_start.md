@@ -29,10 +29,8 @@ e per non compromettere le installazioni sulla tua macchina,
 ti insegnamo innanzitutto come fare a gestire quelli che sono chiamati gli environments.
 Ecco il concetto ed il consiglio:
 
------------------------ ------------------------------------
-<img src="../images/alert.jpeg" alt="Avviso!" style="width:200px;"/>
-    Vedi di organizzarti ed essere sistematico nell'uso degli _environments_.
-----------------------------------------------------------------
+| <img src="../images/alert.jpeg" alt="Avviso!" style="width:40px;"/> | Vedi di organizzarti ed essere sistematico nell'uso degli _environments_. |
+| :------------- | -----------: |
 
 L'idea è che ogni volta che vai a fare la spesa ti porti un carrellino nuovo (environment), che usi per metterci dentro tutto quello che serve per quel particolare scopo (ad esempio l'esame di Ricerca Operativa) evitando di compromettere altri sistemi che hai già sulla tua macchina, od altri environment che hai configurato con cura (e magari utilizzi per collaborare ad un progetto su una piattaforma che deve essere comune). Al tempo stesso ti assicurerai in questo modo che anche installazioni future non possano inficiare il tuo environment per l'esame di Ricerca Operativa od altri tuoi progetti.
 Un ultima cosa: usare la testa significa innanzitutto non farsi prendere da sentimenti negativi come lo scoramento od il panico. Sappi al contrario che:
