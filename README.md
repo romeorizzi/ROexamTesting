@@ -17,6 +17,7 @@ PERCORSO\anaconda3
 PERCORSO\anaconda3\Scripts
 PERCORSO\anaconda3\Library\bin
 ```
+
 dove `PERCORSO` indica la cartella dove si trova Anaconda (solitamente è qualcosa come `C:\Users\tuousername\anaconda3`).
 Per modificare `Path` fai (Sistema -> Impostazioni di sistema avanzate -> Variabili di ambiente -> Variabili di ambiente di sistema -> Selezionare Path e cliccare su Modifica).
 Trovi a questi link
@@ -25,17 +26,20 @@ istruzioni più dettagliate e specifiche alla tua versione di Windows:
 [italiano, altri approcci](https://turbolab.it/windows-10/guida-windows-10-come-modificare-variabile-sistema-path-aggiungere-cartella-percorso-directory-variabile-ambiente-2560).
 ---
 
-2. Il tuo esame avverrà dentro un [Jupyter Notebook](https://jupyter.readthedocs.io/en/latest/) su cui lavorerai sulla tua macchina, dentro il browser.
-   Buona notizia: se ti sei installato Anaconda hai già, e già correttamente installato,
-   il software che serve per far girare i Jupyter Notebook
-   sulla tua macchina e dentro il tuo browser.
-   In caso contario, ti consigliamo di tornare al punto 1 della presente lista, anche se sei già nella situazione che i Jupyter Notebook girano correttamente sulla tua macchina.
+2. Il tuo esame avverrà dentro `Jupyter Notebook`.
+   Buona notizia: se hai installato Anaconda hai già, e già correttamente installato,
+   il software che consente di fare questo.
+   In caso contario, ti consigliamo di tornare al punto 1 della presente lista
+   anche se i Jupyter Notebook girano già correttamente sulla tua macchina.
+   Oltre ad offrirti ulteriori possibilità Anaconda facilita infatti le operazioni
+   che evitano possano crearsi conflitti.
    Se non vuoi installarti Anaconda perchè non hai spazio sul disco, considera la possibilità di installarti `conda`, la sua versione mignon pensata proprio per chi avesse questi problemi.
 
-   Come prerequisito non è sufficiente avere che i Jupyter Notebook girino correttamente sulla tua macchina, ma è anche utile che tu abbia almeno una vaga idea di cosa puoi farci (anche al di là di questo esame) e acquisisca una conoscenza base di come muoversi entro essi.
-  Al link [Jupyter Notebook](https://jupyter.readthedocs.io/en/latest/) dato sopra non solo trovi come eseguire l'installazione ma anche dei tutorial che ti converrà esplorare (solo in piccolissima parte, limitati alla punta dell'iceberg) almeno per un primo acclimatamento nell'ambiente e comprenderne le potenzialità che potrebbero servirti prima come studente e poi nella tua carriera.
+   Un fatto: come prerequisito non è sufficiente avere che i Jupyter Notebook girino correttamente sulla tua macchina, ma è anche utile che tu abbia almeno una vaga idea di cosa puoi farci (utile anche al di là di questo esame) e acquisisca una conoscenza base di come muoversi entro essi.
+  Al link [Jupyter Notebook](https://jupyter.readthedocs.io/en/latest/) dato sopra non solo trovi come eseguire l'installazione ma anche dei tutorial da esplorare (limitati alla punta dell'iceberg).
+Sfruttali per ottenere in tempi rapidi un primo acclimatamento nell'ambiente e comprenderne le potenzialità che potrebbero servirti prima come studente e poi nella tua carriera.
    Se conosci già l'ambiente dei Jupyter Notebook (col quale comunque ti consigliamo di muovere i tuoi primi passi), appena ti senti abbastanza sicuro e spavaldo, forse potrebbe interessarti utilizzare invece  
-   [JupyterLab](https://jupyterlab.readthedocs.io/en/stable/) che offre diversi vantaggi ed anche è incluso nella distribuzione di Anaconda.
+   [JupyterLab](https://jupyterlab.readthedocs.io/en/stable/) che offre diversi vantaggi. Anche esso è incluso nella distribuzione di Anaconda.
 
 3. I Jupyter Notebooks non girano da remoto ma in locale. Devi pertanto ricopiarti in locale il contenuto di questo repo, ossia i materiali specifici all'esame (esercizi ed infrastruttura).
    Vi sono due principali alternative su come farlo,
