@@ -9,15 +9,15 @@ Un ambiente che ti renderà particolarmente agevole gestire gli environment e sp
 L'uso di questo strumento potrebbe rivelarsi il compagno ideale per chi non vuole gestire le cose da terminale.
 
 --------------------------------- ------------------------------------
-![Attenzione:](images/alert.jpeg)\ Se hai Windows, devi aggiungere i seguenti percorsi alla variabile d'ambiente di sistema Path (Sistema -> Impostazioni di sistema avanzate -> Variabili di ambiente -> Variabili di ambiente di sistema -> Selezionare Path e cliccare su Modifica),
-quindi aggiungi i seguenti percorsi:
+![Attenzione:](images/alert.jpeg) | Se hai Windows, devi aggiungere i seguenti 3 percorsi alla variabile d'ambiente di sistema `Path`:
 ```
-PERCORSO\anaconda3<br>
+PERCORSO\anaconda3
 PERCORSO\anaconda3\Scripts
 PERCORSO\anaconda3\Library\bin
 ```
-dove PERCORSO indica la cartella dove si trova Anaconda (solitamente è qualcosa come C:\Users\tuousername\anaconda3).
-Per modificare Path fai circa  (Sistema -> Impostazioni di sistema avanzate -> Variabili di ambiente -> Variabili di ambiente di sistema -> Selezionare Path e cliccare su Modifica).
+
+dove `PERCORSO` indica la cartella dove si trova Anaconda (solitamente è qualcosa come `C:\Users\tuousername\anaconda3`).
+Per modificare `Path` fai circa  (Sistema -> Impostazioni di sistema avanzate -> Variabili di ambiente -> Variabili di ambiente di sistema -> Selezionare Path e cliccare su Modifica).
 Trovi a questi link
 istruzioni più dettagliate e specifiche alla tua versione di Windows:
 [inglese](https://www.computerhope.com/issues/ch000549.htm), [italiano](http://new345.altervista.org/Dispense/Impostare_PATH_Win10.pdf),
