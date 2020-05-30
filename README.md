@@ -45,8 +45,8 @@ Il repo contiene istruzioni a vario livello ed anche temi fac-simile per quello 
    Esse sono spiegate in dettaglio nell'appendice <a href="#ricopiaInLocale">Come ricopiare questo repo in locale</a> in calce a questo documento (siamo nel file `README.md` del repo in questione).
 
 4. Attenzione: non basta scaricarsi in locale i materiali specifici necessari all'esame, devi anche installare delle librerie che la parte infrastrutturale richiama e settare un ambiente dove mandare in esecuzione il tutto.
-   Una cosa buona è che in realtà queste due fasi (punti 3 e 4) sono in tutto indipendenti, puoi eseguirle nell'ordine che preferisci o condurle in modo indipendente o in parallelo, avanzando con una intanto che ti rispondiamo a una richiesta di aiuto sull'altra.
-Pertanto, quando sarà il momento del vero esame, non dovrai installare nulla ma solo scaricarti il locale i materiali specifici necessari all'esame che ti forniremo al momento.
+Una buona notizia: se per testare le cose avrai effettuato l'installazione delle librerie dentro un environment, quando sarà il momento del vero esame non dovrai installare nulla. Dovrai solo scaricarti in locale i materiali specifici per l'esame che ti verranno forniti ad inizio dell'appello,
+attivare l'environment, e laciare `Jupyter`.
 
    Come procedere su 4?
    Portati nella cartella `ROexamTesting/config/`
@@ -56,12 +56,30 @@ Pertanto, quando sarà il momento del vero esame, non dovrai installare nulla ma
     * compresi i semplici concetti di base (che potranno servirti anche altrove) serve poi solo un pizzico di auto-disciplina a metterli in pratica per evitare ogni possibile difficoltà nelle installazioni;
 
    Resta però importante tu comprenda cosa siano gli _environment_ e te ne crei uno specifico per l'esame di Ricerca Operativa. In realtà ti converrà avvalerti di questo stesso strumento anche in altri contesti per evitare conflitti tra le librerie che installi sulla tua macchina.
+   Assimilati questi concetti base, potrai seguire le istruzioni passo passo nella pagina Wiki di questo repo senza correre il rischio di fare le cose alla laggera.
 
-5. dalla cartella `ROexamTesting`, una volta attivato l'ambiente creato appositamente,
+5. Una volta installati i package tramite il requirements.txt, avendo avuto cura di creare un environment apposito (io lo ho chiamato `ROexam`) devi, dopo averlo attivato, abilitare da dentro l'environment le estensioni tramite il comando:
+```
+(ROexam) romeo@romeo-HP-ProBook-450-G4:~/corsi/RO/jupyther/ROexamTesting$ conda install jupyter_contrib_nbextensions && jupyter contrib nbextension install --user
+```
+   Ho riportato per intero il mio prompt così vedi come, da quanto all'estrema sinistra, tu possa avere conferma di essere effettivamente dentro l'environment.
+
+6. dalla cartella dell'esercizio, ad esempio `ROexamTesting/graph`,
+   e dopo esserti assicurato che l'ambiente creato appositamente (`ROexam`)
+   sia quello attivo su quel terminale,
    lancia `jupyter-notebook` ed utilizza Jupyter nel browser
    per visualizzare e testare i notebooks con gli esercizi.
+   Prima di poter lavorare sull'esercizio, qualora presente,
+   devi allora togliere il check alla voce "disable configuration for nbextensions without explicit compatibility (they may break your notebook environment, but can be useful to show for nbextension development)"
+   che trovi nella scheda Nbextensions (si veda la pagina Wiki).
+   Nota che Jupyther (come anche JupytherLab) è un' applicazione che gira nel tuo browser.
+   Nonostante questo, stai operando sui file degli esercizi che ti sei scaricato in locale.
+   *Attenzione:* All'esame dovrai ricordarti di cansegnare questi file col tuo elaborato
+   al fine di completare la tua sottomissione.
+   Non farti ingannare dal fatto di ricevere del feedback di sostegno alla tua compilazione,
+   questo avviene solo localmente e noi non ne abbiamo traccia.
 
-6. Se rilevi un problema nell'utilizzo dei notebooks con gli esercizi,
+7. Se rilevi un problema nell'utilizzo dei notebooks con gli esercizi,
    o dei malfunzionamenti nel sistema sviluppato per l'esame,
    o semplicemente ti serve aiuto,
    scrivi direttamente nel gruppo Telegram dei beta-tester,
@@ -73,6 +91,7 @@ Pertanto, quando sarà il momento del vero esame, non dovrai installare nulla ma
       apri una issue nel repo per richiedere le nostre correzioni od integrazioni (vedi la tag "Issues" in cima a questa pagina di GitHub).
 
       In ogni caso, _vi ringraziamo per ogni spunto, feedback, o richiesta di aiuto_.
+
 
 ## Appendice: Come ricopiare questo repo in locale (e come mantenerlo aggiornato nei contenuti)
 
@@ -98,3 +117,20 @@ Quindi ti converrà aggiornare periodicamente quanto hai scaricato dal repo. Pot
 ```
 git pull
 ```
+
+# Trovi istruzioni di tipo passo passo a guidarti nelle installazione dentro
+
+Nella pagina Wiki di questo repo GitHub trovi istruzioni
+che ti guidano passo passo attraverso tutte le fasi delle installazioni di cui sopra.
+Consigliamo però di attenersi all'impiego meticoloso degli environments.
+Pertanto, prima di installare pacchetti, si crei un environment
+e lo si attivi, in modo da isolarsi dentro di esso a garanzia sua
+(installazioni per l'esame di Ricerca Operativa)
+e di ciò che stà fuori (altre installazioni sulla tua macchina).
+
+Per accedere alla [pagina Wiki](https://github.com/romeorizzi/ROexamTesting/wiki) di un repo su GitHub basta pigiare sul suo tag di scheda posizionato nella barra coi tag delle schede.
+Tale barra è posizionata in alto, disposta orizzontalmente.
+Oppure puoi andare direttamente allo URL di quella pagina che in questo caso è:
+
+[`https://github.com/romeorizzi/ROexamTesting/wiki`](https://github.com/romeorizzi/ROexamTesting/wiki)
+ 

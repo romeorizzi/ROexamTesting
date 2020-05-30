@@ -2,7 +2,7 @@
 
 Gli ecosistemi che girano attorno a Python sono una macchina da corsa a motore aperto. Questo può essere eccitante e certo vi è tanta potenza di cui impadronirsi, tanto movimento ed interazione, e tante opportunità di innovazione, collaborazione, e crescita, ma anche tante occasioni per andare a sbattere la testa contro un muro se non si seguono alcune accortezze.
 Il rischio tipico (la peste di Python) è quello di incedere troppo alla leggera quando si deve aggiungere componenti (elementi di libreria detti pacchetti) per poter far girare un software o sistema in cui siamo interessati.
-E' un operazione facile per la quale si utilizza tipicamente uno dei seguenti strumeti all'uopo preposti:
+E' un operazione facilee può essere reaòizzata con uno dei seguenti strumeti:
 
 - `conda` (vi suggeriamo questo)
 
@@ -15,21 +15,22 @@ Come ulteriore motivazione a proseguire in questa lettura: le cose spiegate quì
 
 Ecco il punto:
 
-Utilizzare `conda` (oppure `pip`, o quello che preferisci, alla fine la storia è la stessa) per installare un nuovo componente è facile e subito fatto, specie se sei disposto a farlo con qualche martellata (ad esempio con un `sudo pip install`) ma il problema è che se sei inesperto (ossia non lo hai ancora preso in quel posto oppure non hai ancora capito da dove è arrivato), probabilmente hai scelto la strada più breve in modo troppo inconsapevole e ti stai scavando la fossa compromettendo le cose nel futuro.
-E puoi star certo che quel futuro arriverà fin troppo presto e puntuale.
+Utilizzare `conda` (oppure `pip`, o quello che preferisci, alla fine la storia è la stessa) per installare un nuovo componente è facile e subito fatto, specie se sei disposto a farlo con qualche martellata (ad esempio con un `sudo pip install`) ma se non usi gli environments comprometterai ben presto la coerenza dei pacchetti scaricati sulla tua macchina.
+Il vero problema è che risulta fin troppo facile scegliere la strada più breve inconsapevoli delle conseguenze, e scavarsi così la fossa predisponendo per conflitti che ti sarà poi faticoso risolvere
+e che potrebbero minare la tua capacità di operare in momenti critici.
 
 Tutti quando andiamo al supermercato ci facciamo prendere dalla sindrome di riempire il carrello, ed in effetti ci sono così tante librerie belle da sperimentare. Ed è giusto farlo, giusto e possibile provare un pò di tutto, ma con testa.
 Non possiamo buttare tutto insieme alla rinfusa dentro nello stesso carrello perchè si creano delle incompatibilità sicuro come l'olio. Alcuni componenti assumono certe dipendenze, in una ben precisa versione, e anche per il solo fatto che gli aggiorni la versione di quel componente mica è detto che funzionino meglio: no, smettono di funzionare e non sai più come uscirne a risolvere il problema.
 Anzi, se a quel punto perdi la testa e cominci a muoverti senza sapere cosa stai facendo (senza aver capito e fatto tuo quanto stiamo cercando di dirti quì) rischi di introdurre conflitti in circolo così che alla fine nessun software potrà più funzionare, nè i più vecchi nè l'ultimo installato.
-Pertanto, quando ti installi qualcosa, e potrebbe anche essere il software migliore e più curato e sicuro e stabile di questo mondo, potresti pertanto compromettere la precedente installazione di altri software presenti sulla tua macchina. L'introduzione di una cosa nuova manda fuori briscola cose venute prima (se poi fai sudo agisci a livello di sistema invece che di utente e potresti compromettere la stessa installazione di sistema di python).
+Tienilo ben presente: quando installi qualcosa, e potrebbe anche essere il software migliore e più curato e sicuro di questo mondo, potresti compromettere la precedente installazione di altri software presenti sulla tua macchina. L'introduzione di una cosa nuova manda fuori briscola cose venute prima (se poi fai `sudo` agisci a livello di sistema invece che di utente e potresti compromettere la stessa installazione di sistema di python).
 
-Vi vogliamo tutti in grado di partecipare al beta-testing coi temi fac-simile e poi all'esame. Anzi, ci piacerebbe promuovere il brake on through to the other side (https://www.youtube.com/watch?v=-r679Hhs9Zs), dove ci aiutate a migliorare il sistema, i materiali, la documentazione.
+Vi vogliamo tutti in grado di partecipare al beta-testing coi temi fac-simile e poi all'esame,
+dove non vogliamo incontrare intoppi di sorta. Anzi, ci piacerebbe promuovere il brake on through to the other side (https://www.youtube.com/watch?v=-r679Hhs9Zs), dove ci aiutate a migliorare il sistema, i materiali, la documentazione.
 Per non incorrere in problemi di versioni disallineate tra di noi,
 e per non compromettere le installazioni sulla tua macchina,
 ti insegnamo innanzitutto come fare a gestire quelli che sono chiamati gli environments.
-Ecco il concetto ed il consiglio:
 
-| <img src="../images/alert.jpeg" alt="Avviso!" style="width:40px;"/> | Vedi di organizzarti ed essere sistematico nell'uso degli _environments_. |
+| <img src="../images/alert.jpeg" alt="Avviso!" style="width:30px;"/> | Vedi di organizzarti ed essere sistematico nell'uso degli _environments_. |
 | :------------- | -----------: |
 
 L'idea è che ogni volta che vai a fare la spesa ti porti un carrellino nuovo (environment), che usi per metterci dentro tutto quello che serve per quel particolare scopo (ad esempio l'esame di Ricerca Operativa) evitando di compromettere altri sistemi che hai già sulla tua macchina, od altri environment che hai configurato con cura (e magari utilizzi per collaborare ad un progetto su una piattaforma che deve essere comune). Al tempo stesso ti assicurerai in questo modo che anche installazioni future non possano inficiare il tuo environment per l'esame di Ricerca Operativa od altri tuoi progetti.
@@ -160,3 +161,5 @@ Alcune pagine con spiegazioni correlate:
 - [Why and How to make a Requirements.txt](https://medium.com/@boscacci/why-and-how-to-make-a-requirements-txt-f329c685181e)
 
 - [To package a conda environment (Requirement.txt and virtual environment)](https://gist.github.com/pratos/e167d4b002f5d888d0726a5b5ddcca57)
+
+- [Installing conda packages](https://docs.anaconda.com/anaconda/user-guide/tasks/install-packages/)
