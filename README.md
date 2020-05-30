@@ -8,21 +8,22 @@ Il repo contiene istruzioni a vario livello ed anche temi fac-simile per quello 
 Un ambiente che ti renderà particolarmente agevole gestire gli environment e sperimentare una grande varietà di applicazioni che potrebbero esserti interessanti anche in altre occasioni è l'[Anaconda Navigator](https://docs.anaconda.com/anaconda/navigator/).
 L'uso di questo strumento potrebbe rivelarsi il compagno ideale per chi non vuole gestire le cose da terminale.
 
---------------------------------- ------------------------------------
-![Attenzione:](images/alert.jpeg) | Se hai Windows, devi aggiungere i seguenti 3 percorsi alla variabile d'ambiente di sistema `Path`:
+---
+**Attenzione:**
+
+Se hai Windows, devi aggiungere i seguenti 3 percorsi alla variabile d'ambiente di sistema `Path`:
 ```
 PERCORSO\anaconda3
 PERCORSO\anaconda3\Scripts
 PERCORSO\anaconda3\Library\bin
 ```
-
 dove `PERCORSO` indica la cartella dove si trova Anaconda (solitamente è qualcosa come `C:\Users\tuousername\anaconda3`).
-Per modificare `Path` fai circa  (Sistema -> Impostazioni di sistema avanzate -> Variabili di ambiente -> Variabili di ambiente di sistema -> Selezionare Path e cliccare su Modifica).
+Per modificare `Path` fai (Sistema -> Impostazioni di sistema avanzate -> Variabili di ambiente -> Variabili di ambiente di sistema -> Selezionare Path e cliccare su Modifica).
 Trovi a questi link
 istruzioni più dettagliate e specifiche alla tua versione di Windows:
 [inglese](https://www.computerhope.com/issues/ch000549.htm), [italiano](http://new345.altervista.org/Dispense/Impostare_PATH_Win10.pdf),
 [italiano, altri approcci](https://turbolab.it/windows-10/guida-windows-10-come-modificare-variabile-sistema-path-aggiungere-cartella-percorso-directory-variabile-ambiente-2560).
-----------------------------------------------------------------
+---
 
 2. Il tuo esame avverrà dentro un [Jupyter Notebook](https://jupyter.readthedocs.io/en/latest/) su cui lavorerai sulla tua macchina, dentro il browser.
    Buona notizia: se ti sei installato Anaconda hai già, e già correttamente installato,
