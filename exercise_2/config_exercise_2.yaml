@@ -1,0 +1,15 @@
+text:
+  - 'exercise_2/data/texts/intro.md'
+  - 'exercise_2/data/texts/problem_1.md'
+  - 'exercise_2/data/texts/problem_2.md'
+  - 'exercise_2/data/texts/problem_3.md'
+  - 'exercise_2/data/texts/problem_4.md'
+  - 'exercise_2/data/texts/problem_5.md'
+  - 'exercise_2/data/texts/problem_6.md'
+  - 'exercise_2/data/texts/problem_7.md'
+  - 'exercise_2/data/texts/problem_8.md'
+  - 'exercise_2/data/texts/problem_9.md'
+
+table: 'exercise_2/data/table/tb1.md'
+
+res: './exercise_2/data/tmp/'

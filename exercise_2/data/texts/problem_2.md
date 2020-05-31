@@ -1,0 +1,3 @@
+- Una sequenza è detta una N-sequenza, o sequenza crescente con un possibile ripensamento, se esiste un indice i tale cha ciascuno degli elementi della sequenza esclusi al più il primo e l’i-esimo sono strettamente maggiori dell’elemento che immediatamente li precede nella sequenza. \
+Trovare la più lunga N-sequenza che sia una sottosequenza della sequenza data. \
+Specificare quanto è lunga e fornirla.
