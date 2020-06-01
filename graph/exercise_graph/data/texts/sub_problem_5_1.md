@@ -1,1 +1,0 @@
-- Per ciascuno dei seguenti archi dire, certificandolo, se esso appartenga a (tutte / anessuna / a qualcuna ma non a tutte) le soluzioni ottime: 
