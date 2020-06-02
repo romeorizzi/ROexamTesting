@@ -1,31 +1,34 @@
 # ROexamTesting
 
-Questo repository è il punto di incontro tra gli sviluppatori e gli studenti coinvolti nel beta-testing di quello che sarà il sistema per i temi dell'esame di Ricerca Operativa dal 2020 in poi.
+Questa repository è il punto di incontro tra gli sviluppatori e gli studenti coinvolti nel beta-testing di quello che sarà il sistema per i temi dell'esame di Ricerca Operativa dal 2020 in poi.
 
-Il repo conterrà istruzioni a vario livello sulle installazioni e configurazioni della tua macchina per predisporla all'esame, e si propone di crescere parallelamente ad ogni difficoltà da voi riscontrata e fatta presente.
+La repo conterrà istruzioni a vario livello sulle installazioni e configurazioni da apportare sulla tua macchina per predisporla all'esame, e si propone di crescere parallelamente ad ogni difficoltà da voi riscontrata e fatta presente
+durante la fase di testing e verifica.
 Il repò continuerà pertanto a crescere in modo dinamico, sia per mano vostra (contribuirete con le vostre domande e segnalazioni) che nostra.
 
-Per mano nostra il repo andrà arricchendosi via via di esercizi fac-simile per quello che sarà il tuo tema d'esame.
+Per mano nostra la repo andrà arricchendosi via via di esercizi fac-simile per quello che sarà il tuo tema d'esame.
 Le tipologie delle competenze richieste ed invero degli stessi esercizi
 sono in realtà quasi in tutto le stesse di quelle dei temi delle edizioni precedenti.
 L'[archivio di tali temi con correzzioni annesse](http://profs.sci.univr.it/~rrizzi/classes/RO/info_esami/)
 resta pertanto, anche per estensione oltre che per stabilità,
 il riferimento più valido per farsi un'idea dell'ampio spettro delle domande
-che potremmo fare e delle tue competenze che potrebbero trovare valorizzazione.
+che potremmo fare e delle tue competenze che potrebbero trovare valorizzazione al momento dell'esame.
 Resta che il taglio di come poste le domande potrà shiftare, magari anche nel tempo, mano a mano che prendiamo consapevolezza insieme di cosa consentito coi nuovi supporti.
-La differenza principale stà infatti nel fatto che l'esame quest'anno non avverrà su carta ma sul tuo PC da casa.
-Avverrà dentro un foglio `Jupyter`, e questo porta inevitabilmente a ruotare alcune consegne e ci consente di precisarle in modo più puntuale, come sempre avremmo voluto fare (ed alto è stato il nostro sforzo in questo negli anni). Stiamo inoltre gradualmente predisponendo affinchè tale foglio possa fornirti parziali validazioni dei tuoi certificati di SI o di NO. Lo stesso feedbcak e la qualità dell'interazione consentita dentro il Jupyter Notebook potrà andare migliorando gradualmente.
-Dobbiamo procedere cautamente perchè potremo avere dei problemi di conflitto e stabilità su tante installazioni su piattaforme diverse, ma niente paura:
+La differenza principale con quanto prima del 2020 stà infatti nel fatto che l'esame quest'anno non avverrà su carta ma sul tuo PC da casa.
+Avverrà dentro un foglio Jupyter (`Jupyter Notebook`), e questo porta inevitabilmente a ruotare alcune consegne e ci consente di precisarle in modo più puntuale, come sempre avremmo voluto fare (ed alto è stato il nostro sforzo in questo negli anni, tanto da predisporre per questa evoluzione). Puntiamo ad introdurre gradualmente dei supporti che possano rendere più piacevole ed autentica l'esperienza dell'esame:
+nella nostra visione il Jupyter Notebook potrà fornirti parziali validazioni dei tuoi certificati di SI o di NO. Lo stesso feedback e la qualità dell'interazione consentita dentro il Jupyter Notebook potrà andare migliorando gradualmente
+man mano che avanzeremo nella realizzazione dei supporti (è un progetto in cui sei invitato ad entrare anche come modalità alternativa di sostenere l'esame).
+Se tu dovessi ritrovarti con un applet che non funziona, oltre che a segnalarcelo (non all'esame), niente paura:
 eventualmente rinunciando ad utilizzare l'applet più figo e/o a dei feedback
-di supporto ti sarà comunque sempre consentito di fornire le tue risposte in modalità testuale pura. Quindi, non appena avrai installata una versione funzionante di Jupyter sarai già in condizione di condurre il tuo esame dimostrando la tua competenza. Per avere l'intero video-gioco con tutte le features
+di supporto ti sarà comunque sempre consentito di fornire le tue risposte in modalità testuale pura (aderendo però allo spirito della consegna). Quindi, non appena avrai installata una versione funzionante di Jupyter sarai già in condizione di condurre il tuo esame dimostrando la tua competenza. Per avere l'intero video-gioco con tutte le features
 segui con cura le istruzioni ed eventualmente chiedine altre.
 
 
 
 ## Documentazione: il sistema di pagine Wiki
 
-Le pagine Wiki di questo repo GitHub contengono istruzioni che ti guideranno in tutte le fasi di installazione necessarie.
-Anche se le istruzioni saranno spesso di tipo passo passo e per tua praticità potrai ricopiare i comandi nel tuo terminale (ricorda: nel mondo grafico usi `Ctrl-C` per ricopiare nella clipboard e `Ctrl-V` per richiamare dalla clipboard. Nel terminale usi invece Ctrl-C` e `Ctrl-V` ma la clipboard è la stessa e quindi puoi portare da unmondo all'altro), ti converrà comunque mantenerti vigile, critico e consapevole di cosa fanno.
+Le pagine Wiki di questa repo GitHub contengono istruzioni che ti guideranno in tutte le fasi di installazione necessarie.
+Anche se le istruzioni saranno spesso di tipo passo passo e per tua praticità potrai ricopiare i comandi nel tuo terminale (ricorda: nel mondo grafico usi `Ctrl-C` per ricopiare nella clipboard e `Ctrl-V` per richiamare dalla clipboard. Nel terminale usi invece Ctrl-Shift-C` e `Ctrl-Shift-V` ma la clipboard è la stessa e quindi puoi portare le cose da un mondo all'altro), ti converrà comunque mantenerti vigile, critico e consapevole di cosa fanno i comandi ricopiati per essere pronoto a trovare soluzioni in caso di difficoltà (anche se risolvi autonomamente considera se opportuno farci sapere per offrire aiuto ai compagni).
 
 Ti consigliamo in particolare di attenerti all'impiego meticoloso degli __environments__.
 Pertanto, prima di installare pacchetti, crea un environment e attivalo, in modo da isolarti dentro di esso a garanzia sia sua
@@ -51,7 +54,7 @@ In alternativa, ti incoraggiamo a utilizzare anche per questo i meccanismi di Gi
 In ogni caso, _vi ringraziamo per ogni spunto, feedback, o richiesta di aiuto_.
 
 
-## Come ricopiare questo repo in locale (e come mantenerlo aggiornato nei contenuti)
+## Come ricopiare questa repo in locale (e come mantenerlo aggiornato nei contenuti)
 
 <a name="ricopiaInLocale">Il modo più rapido e flessibile</a>
     per farlo è lanciare il seguente comando da terminale:
@@ -64,22 +67,23 @@ Se non lo hai o non vuoi rapportarti col terminale, né contribuire con parti tu
 Se non ti pesa dover ripetere queste operazioni ad ogni aggiornamento, allora avere `git` non ti sarà necessario per poter testare ed utilizzare ogni cosa, e potrai comunque farci avere il tuo feedback e richieste di aiuto
 sia attraverso il canale Telegram che attraverso la pagina GitHub del repo.
 
-Quando ti dovesse interessare la possibilità di contribuire attivamente a un qualche progetto di collaborazione
-(per esempio in questo sei benvenuto), allora verrà per te il momento di conoscere meglio `git`. Potrai allora installartelo seguendo la guida qui riportata: 
+Se invece opti per seguire il nostro consiglio di avvalerti di git (anche come forma di investimento dalle ampie ricadute) ecco una quida all'installazione: 
 
 [Istruzioni per installare `git` sulla tua macchina](https://www.html.it/pag/53180/installazione-di-git/)
 
-> [*Per saperne di più:*] Git è uno strumento potentissimo per promuovere la collaborazione su progetti condivisi, tanto che è stato alla basa dell'attuale fiorire dell'open source. Fu ideato da Torvald per consentire un più distribuito sviluppo di Linux, e ha poi avviato una profonda rivoluzione nel mondo del software. Più recentemente si stà affermando anche per consentire la condivisione in progetti che nulla hanno a vedere col codice, la programmazione, o l'informatica. Per questo si sono andate recentemente affermando interfacce grafiche che consentono l'uso di git senza passare per il terminale, come ad esempio `gitcraken`. (Noi comunque non sottaciamo i vantaggi che vengono con l'uso del terminale anche in questo contesto, inoltre, se ti installi `git` su Windows nessuno mette in dubbio ti convenga scegliere l'installazione che ti offre di avere anche un terminale nello stesso bundle.) <br>A nostro avviso `git` và considerato ormai come una "enabling technology". E' grosso ma puoi venire a conoscere le sue funzionalità e servizi un pò per volta, man mano che ti servono. In rete trovi ottimi tutorial per cominciare. Procedi un passo alla volta, mano a mano che vedi che ti serve di più potrai ricercare in rete all'occorrenza.
+Già avere `git` installato sulla tua macchina potrà facilitarti nelle installazioni. Ma se vorrai cominciare ad avvalerti di questo potente e flessibile strumento gratuito per il versioning dei tuoi file, o per il loro backup in locale o nel cloud, o per poter collaborare a progetti, potrai allora venire a conoscere di più su questo strumento avvalendoti dei molti materiali che trovi in internet.
+
+> **Per saperne di più:** Git è uno strumento potentissimo e praticissimo per promuovere la collaborazione su progetti condivisi, tanto che è stato alla basa dell'attuale fiorire dell'open source. Fu ideato da Torvald per consentire un più distribuito sviluppo di Linux, e ha poi avviato una profonda rivoluzione nel mondo del software. Più recentemente si stà affermando anche per consentire la condivisione in progetti che nulla hanno a vedere col codice, la programmazione, o l'informatica. Per questo si sono andate recentemente affermando interfacce grafiche che consentono l'uso di git senza passare per il terminale, come ad esempio `gitcraken`. (Noi comunque non sottaciamo i vantaggi che vengono con l'uso del terminale anche in questo contesto. Inoltre, se ti installi `git` su Windows nessuno mette in dubbio ti convenga scegliere l'installazione che ti offre di avere anche un terminale nello stesso bundle.) <br>A nostro avviso `git` và considerato ormai come una "enabling technology". E' grosso ma puoi venire a conoscere le sue funzionalità e servizi un pò per volta, man mano che ti servono. In rete trovi ottimi tutorial per cominciare. Procedi un passo alla volta, mano a mano che vedi che ti serve di più potrai ricercare in rete all'occorrenza e dischiudere un nuovo potere e servizio di questo tuo amico.
 
 Avere `git` installato sulla tua macchina potrà aiutarti anche perchè noi aggiungeremo esercizi e componenti da testare un pò alla volta, man mano che li abbiamo pronti. Inoltre andremo via via aggiornandoli e migliorando le istruzioni grazie anche alle vostre segnalazioni di malfunzionamenti e richieste di chiarimenti.
 Quindi ti converrà aggiornare periodicamente quanto hai scaricato dal repo.
-Se vuoi solo controllare la presenza di nuovi aggiornamenti puoi farlo tramite il comando
+Se vuoi solo controllare la presenza di nuovi aggiornamenti puoi farlo lanciando, da dentro la cartella `ROexamTesting`, il comando
 
 ```
 git fetch
 ```
 
-Il modo più semplice poi per scaricare in locale i file nuovi (tipicamente nuovi esercizi) e/o quelli aggiornati è di lanciare il seguente comando (sempre da dentro la cartella ROexamTesting o da qualsiasi sua sottocartella):
+Il modo più semplice per scaricarti in locale gli eventuali file nuovi (tipicamente nuovi esercizi) e/o quelli aggiornati è di lanciare il seguente comando (sempre da dentro la cartella `ROexamTesting` o da qualsiasi sua sottocartella):
 
 ```
 git pull
@@ -87,6 +91,6 @@ git pull
 
 Se però tu o i tuoi programmi avrete modificato dei file in locale, il pull non andrà in porto per non rischiare di sovrascrivere tuoi file e ti verrà segnalato un conflitto. Se conosci `git` od approfondisci un pò riguardo ad esso, avrai molti modi per risolverlo.
 Ma, se sei inesperto, non spaventarti né bloccarti:
-ricorda che potrai sempre cancellare la cartella dove hai ricopiato il repo in locale, e riscaricarlo da capo da questo sito nella versione aggiornata.
+ricorda che potrai sempre cancellare la cartella dove hai ricopiato la repo in locale, e riscaricarlo da capo da questo sito nella sua ultima versione.
 
 
