@@ -13,7 +13,7 @@ Ti consigliamo in particolare di attenerti all'impiego meticoloso degli __enviro
 Pertanto, prima di installare pacchetti, crea un environment e attivalo, in modo da isolarti dentro di esso a garanzia sia sua
 (per le installazioni per l'esame di Ricerca Operativa) sia di ciò che sta fuori (altre installazioni sulla tua macchina).
 
-Per accedere alla [pagina Wiki principale](https://github.com/romeorizzi/ROexamTesting/wiki) di un repo su GitHub basta cliccare sul suo tag di scheda posizionato nella barra in alto, disposta orizzontalmente sotto il nome del repository.
+Per accedere alla [pagina Wiki principale](https://github.com/romeorizzi/ROexamTesting/wiki) di un repo su GitHub basta cliccare sul tag della scheda _Wiki_ posizionato nella barra disposta in cima alla pagina del repository.
 Oppure puoi andare direttamente all'URL della pagina, che in questo caso è:
 
 [`https://github.com/romeorizzi/ROexamTesting/wiki`](https://github.com/romeorizzi/ROexamTesting/wiki)
@@ -28,7 +28,7 @@ o semplicemente ti serve aiuto, puoi scrivere direttamente nel gruppo Telegram d
 ```
 
 In alternativa, ti incoraggiamo a utilizzare anche per questo i meccanismi di GitHub per facilitare la collaborazione:
-   puoi aprire un'issue nel repo per richiedere le nostre correzioni o integrazioni (vedi la scheda _Issues_ in cima a questa pagina di GitHub).
+   puoi aprire un'issue nel repo per richiedere le nostre correzioni o integrazioni (vedi la scheda _Issues_, sempre in cima a questa pagina di GitHub).
 
 In ogni caso, _vi ringraziamo per ogni spunto, feedback, o richiesta di aiuto_.
 
@@ -42,21 +42,28 @@ git clone https://github.com/romeorizzi/ROexamTesting.git
 ```
 questo comando richiede però che tu abbia `git` installato sulla tua macchina.
 
-Se non lo hai o non vuoi rapportarti col terminale, né contribuire con parti tue al repo ma solo fruirne come di un tutorial per predisporti all'esame, allora, dal repo su GitHub nel tuo browser premi il bottone verde "Clone or Download" in alto a destra, scarica il file `.zip` in locale e poi decomprimilo. Non ti servirà altro per poter testare ed utilizzare ogni cosa, e potrai comunque farci avere il tuo feedback.
+Se non lo hai o non vuoi rapportarti col terminale, né contribuire con parti tue al repo ma solo fruirne come di un tutorial per predisporti all'esame, allora, dal repo su GitHub nel tuo browser premi il bottone verde "Clone or Download" in alto a destra, scarica il file `.zip` in locale e poi decomprimilo. (_Nota:_ Quando la repo è ottenuta scaricando lo zip da GitHub e decomprimendolo, ne andrà poi subito cambiato il nome da `ROexamTesting-master` a `ROexamTesting`.)
+Se non ti pesa dover ripetere queste operazioni ad ogni aggiornamento, allora avere `git` non ti sarà necessario per poter testare ed utilizzare ogni cosa, e potrai comunque farci avere il tuo feedback e richieste di aiuto
+sia attraverso il canale Telegram che attraverso la pagina GitHub del repo.
 
 Quando ti dovesse interessare la possibilità di contribuire attivamente a un qualche progetto di collaborazione
 (per esempio in questo sei benvenuto), allora verrà per te il momento di conoscere meglio `git`. Potrai allora installartelo seguendo la guida qui riportata: 
 
 [Istruzioni per installare `git` sulla tua macchina](https://www.html.it/pag/53180/installazione-di-git/)
 
+(_Per saperne di più:_ Git è uno strumento potentissimo per promuovere la collaborazione su progetti condivisi,
+tanto che è stato alla basa dell'attuale fiorire dell'open source. Fu ideato da Torvald per consentire un più distribuito sviluppo di Linux, e si stà affermando anche per consentire la condivisione in progetti che nulla hanno a vedere col codice, la programmazione, o l'informatica. Per questo si sono andate recentemente affermando interfacce grafiche che consentono l'uso di git senza passare per il terminale, come ad esempio `gitcraken`. (Noi comunque non sottaciamo i vantaggi che vengono con l'uso del terminale anche in questo contesto, inoltre, se ti installi `git` su Windows nessuno mette in dubbio ti convenga scegliere l'installazione che ti offre di avere anche un terminale nello stesso bundle).
+A nostro avviso `git` và considerato ormai come una "enabling technology". E' grosso ma puoi venire a conoscere le sue funzionalità e servizi un pò per volta, man mano che ti servono. In rete trovi ottimi tutorial per cominciare. Procedi un passo alla volta, mano a mano che vedi che ti serve di più potrai ricercare in rete all'occorrenza.)
+
 Avere `git` installato sulla tua macchina potrà aiutarti anche perchè noi aggiungeremo esercizi e componenti da testare un pò alla volta, man mano che li abbiamo pronti. Inoltre andremo via via aggiornandoli e migliorando le istruzioni grazie anche alle vostre segnalazioni di malfunzionamenti e richieste di chiarimenti.
-Quindi ti converrà aggiornare periodicamente quanto hai scaricato dal repo, magari controllando la presenza di nuovi file prima di lavorarci, tramite il comando
+Quindi ti converrà aggiornare periodicamente quanto hai scaricato dal repo.
+Se vuoi solo controllare la presenza di nuovi aggiornamenti puoi farlo tramite il comando
 
 ```
 git fetch
 ```
 
-Il modo più semplice poi per scaricare in locale i file nuovi e/o quelli aggiornati è di lanciare il seguente comando da dentro tale cartella (o da qualsiasi sua sottocartella):
+Il modo più semplice poi per scaricare in locale i file nuovi (tipicamente nuovi esercizi) e/o quelli aggiornati è di lanciare il seguente comando (sempre da dentro la cartella ROexamTesting o da qualsiasi sua sottocartella):
 
 ```
 git pull
