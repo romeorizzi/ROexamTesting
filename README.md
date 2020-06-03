@@ -2,26 +2,23 @@
 
 Questa repository è il punto di incontro tra gli sviluppatori e gli studenti coinvolti nel beta-testing di quello che sarà il sistema per i temi dell'esame di Ricerca Operativa dal 2020 in poi.
 
-La repo conterrà istruzioni a vario livello sulle installazioni e configurazioni da apportare sulla tua macchina per predisporla all'esame, e si propone di crescere parallelamente ad ogni difficoltà da voi riscontrata e fatta presente
+La repo conterrà istruzioni a vario livello sulle installazioni e configurazioni da apportare sulle vostre macchine per predisporle all'esame, e si propone di crescere parallelamente a ogni difficoltà da te riscontrata e fatta presente
 durante la fase di testing e verifica.
-Il repò continuerà pertanto a crescere in modo dinamico, sia per mano vostra (contribuirete con le vostre domande e segnalazioni) che nostra.
+Il repò continuerà pertanto a crescere in modo dinamico, sia per mano tua (potrai contribuire con le tue domande e segnalazioni) che nostra.
 
 Per mano nostra la repo andrà arricchendosi via via di esercizi fac-simile per quello che sarà il tuo tema d'esame.
-Le tipologie delle competenze richieste ed invero degli stessi esercizi
-sono in realtà quasi in tutto le stesse di quelle dei temi delle edizioni precedenti.
-L'[archivio di tali temi con correzzioni annesse](http://profs.sci.univr.it/~rrizzi/classes/RO/info_esami/)
-resta pertanto, anche per estensione oltre che per stabilità,
-il riferimento più valido per farsi un'idea dell'ampio spettro delle domande
-che potremmo fare e delle tue competenze che potrebbero trovare valorizzazione in punti-voto al momento dell'esame (il nostro approccio non è di guardare a quello che uno non sà ma a quello che uno sà, o meglio alle competenze che ha ed è in grado di esprimere).
+Le tipologie delle competenze richieste ed invero degli stessi esercizi sono in realtà quasi in tutto le stesse di quelle dei temi delle edizioni precedenti.
+L'[archivio di tali temi con correzioni annesse](http://profs.sci.univr.it/~rrizzi/classes/RO/info_esami/)
+resta pertanto, anche per estensione oltre che per stabilità, il riferimento più valido per farsi un'idea dell'ampio spettro delle domande che potremmo fare e delle tue competenze che potrebbero trovare valorizzazione in punti-voto al momento dell'esame (il nostro approccio non è di guardare a quello che uno non sa ma a quello che uno sa, o meglio alle competenze che ha ed è in grado di esprimere).
 Resta che il taglio di come poste le domande potrà via via shiftare rispetto a quanto era sul cartaceo, magari anche nel tempo mano a mano che prendiamo consapevolezza insieme di cosa consentito coi nuovi supporti.
 Gli esercizi che trovi in questo repo rivelano questi shift in anteprima.
-La differenza principale con quanto prima del 2020 stà infatti nel fatto che l'esame quest'anno non avverrà su carta ma sul tuo PC da casa.
-Avverrà dentro un foglio Jupyter (`Jupyter Notebook`), e questo porta inevitabilmente a ruotare alcune consegne e ci consente di precisarle in modo più puntuale, come sempre avremmo voluto fare (ed alto è stato il nostro sforzo in questo negli anni, tanto da predisporre per questa evoluzione). Puntiamo ad introdurre gradualmente dei supporti che possano rendere più piacevole ed autentica l'esperienza dell'esame:
-nella nostra visione il Jupyter Notebook potrà fornirti parziali validazioni dei tuoi certificati di SI o di NO. Lo stesso feedback e la qualità dell'interazione consentita dentro il Jupyter Notebook potrà andare migliorando gradualmente
+La differenza principale con quanto prima del 2020 sta infatti nel fatto che l'esame quest'anno non avverrà su carta ma sul tuo PC da casa.
+Avverrà dentro un foglio Jupyter (`Jupyter Notebook`), e questo porterà inevitabilmente a ruotare alcune consegne e ci consentirà di precisarle in modo più puntuale, come sempre avremmo voluto fare (e alto è stato il nostro sforzo in questo negli anni, tanto da predisporre a questa evoluzione). Puntiamo a introdurre gradualmente dei supporti che possano rendere più piacevole ed autentica l'esperienza dell'esame:
+nella nostra visione il Jupyter Notebook potrà fornirti parziali validazioni dei tuoi certificati di SI' o di NO. Lo stesso feedback e la qualità dell'interazione consentita dentro il Jupyter Notebook potrà andare migliorando gradualmente
 man mano che avanzeremo nella realizzazione dei supporti (è un progetto in cui sei invitato ad entrare anche come modalità alternativa di sostenere l'esame).
 Se tu dovessi ritrovarti con un applet che non funziona, oltre che a segnalarcelo (non all'esame dove ormai serve poco ed alzerebbe solo la confusione), niente paura:
 eventualmente rinunciando ad utilizzare l'applet più figo e/o a dei feedback
-di supporto ti sarà comunque sempre consentito di fornire le tue risposte in modalità testuale pura (accertandoti però di aderire allo spirito della consegna utilizzando il tuo senso critico piuttosto che un verificatore od un editor guidato od applet di supporto). Quindi, non appena avrai installata una versione funzionante di Jupyter sarai già in condizione di condurre il tuo esame dimostrando la tua competenza. Per avere l'intero video-gioco con tutte le features e supporti segui con cura le istruzioni ed eventualmente chiedine altre.
+di supporto ti sarà comunque sempre consentito di fornire le tue risposte in modalità testuale pura (accertandoti però di aderire allo spirito della consegna utilizzando il tuo senso critico piuttosto che un verificatore od un editor guidato od applet di supporto). Quindi, non appena avrai installata una versione funzionante di Jupyter sarai già in condizione di condurre il tuo esame dimostrando la tua competenza. Per avere l'intero videogioco con tutte le features e supporti segui con cura le istruzioni ed eventualmente chiedine altre.
 
 
 
