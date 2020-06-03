@@ -40,16 +40,28 @@ Oppure puoi andare direttamente all'URL della pagina, che in questo caso è:
 [`https://github.com/romeorizzi/ROexamTesting/wiki`](https://github.com/romeorizzi/ROexamTesting/wiki)
  
 
-## Aiuto e segnalazione di problemi
+## Chiedere Aiuto e Segnalazione di Problemi
 
-Se rilevi un problema nell'utilizzo dei notebooks con gli esercizi, o dei malfunzionamenti nel sistema sviluppato per l'esame,
-o semplicemente ti serve aiuto, puoi scrivere direttamente nel gruppo Telegram dei beta-tester, a cui puoi auto-iscriverti al link:
+Se incontri delle difficoltà nell'installazione, o rilevi un problema nell'utilizzo dei notebooks con gli esercizi,
+o dei malfunzionamenti nel sistema sviluppato per l'esame,
+o semplicemente ti serve aiuto,
+scrivi direttamente nel gruppo Telegram dei beta-tester,
+a cui puoi auto-iscriverti al link:
+
 ```
    https://t.me/joinchat/EDaVmBl39deQMumY7g8U8w
 ```
 
-In alternativa, ti incoraggiamo a utilizzare anche per questo i meccanismi di GitHub per facilitare la collaborazione:
-   puoi aprire un'issue nel repo per richiedere le nostre correzioni o integrazioni (vedi la scheda _Issues_, sempre in cima a questa pagina di GitHub).
+Il canale Telegram è perfetto specie per le richieste di aiuto,
+dove potremo essere più pronti a rispondere ed avremo anche un contatto diretto e, se del caso, l'aiuto potrà divenire subito individuale.
+Per domande che riguardino il come si affronta un esercizio al di là di quanto concerne questa sperimentazione (ad esempio su esercizi in temi prima del 2020)
+sarà preferibile utilizzare il canale Telegram del corso.
+
+In alternativa, sei incoraggiato ad utilizzare i meccanismi predisposti da GitHub per facilitare la collaborazione:
+   apri una issue nel repo per richiedere le nostre correzioni od integrazioni (vedi la tag "Issues" in cima a questa pagina di GitHub) o,
+   ancora meglio, fai un fork dove proponi le tue correzioni, migliorie, od aggiunte, ed inserisci una pull request per il deployment del tuo contributo.
+   Attraverso queste modalità potrai anche contribuire a configurare quello che potrà essere l'ambiente entro il quale sarai chiamato ad operare all'esame.
+   Ad ogni modo, prenderemo in considerazione anche semplici idee e spunti che dovessero venirvi in mente nella fatica del lavoro dalla vostra parte del muro (ma se le realizzi tu sarai allora sicuro che riusciremo a farti avere quanto ti piacerebbe). Ovviamente stiamo sempre parlando di supporti non spoileranti dell'esercizio.
 
 In ogni caso, _vi ringraziamo per ogni spunto, feedback, o richiesta di aiuto_.
 
