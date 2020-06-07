@@ -26,6 +26,7 @@ di supporto ti sarà comunque sempre consentito di fornire le tue risposte in mo
 
 Le pagine Wiki di questa repo GitHub contengono istruzioni che ti guideranno in tutte le fasi di installazione necessarie.
 Anche se le istruzioni saranno spesso di tipo passo passo e per tua praticità potrai ricopiare i comandi nel tuo terminale (ricorda: nel mondo grafico usi `Ctrl-C` per ricopiare nella clipboard e `Ctrl-V` per richiamare dalla clipboard; nel terminale usi invece `Ctrl-Shift-C` e `Ctrl-Shift-V` ma la clipboard è la stessa e quindi puoi portare le cose da un mondo all'altro), ti converrà comunque mantenerti vigile, critico e consapevole di cosa fanno i comandi ricopiati per essere pronoto a trovare soluzioni in caso di difficoltà (anche se risolvi autonomamente considera se opportuno farci sapere per offrire aiuto ai compagni).
+Per controllare che le combinazioni `Ctrl-Shift-C` e `Ctrl-Shift-V` siano abilitate nel tuo terminale ti conviene testarle entrambe dentro il terminale stesso, se non lo sono è probabile ci sia un'opzione che le regoli in un qualche menù di preferenze, e ti conviene farlo subito, od in alternativa potrai, dopo aver selezionato l'eventuae testo che intendi catturare, pigiare il tasto destro del mouse quando sul terminale stesso e, dal menù che compare, selezioni copia (copy) od incolla (paste).
 
 Ti consigliamo in particolare di attenerti all'impiego meticoloso degli __environments__.
 Pertanto, prima di installare pacchetti, crea un environment e attivalo, in modo da isolarti dentro di esso a garanzia sia sua
