@@ -105,7 +105,7 @@ nel senso che puoi partire ad utilizzarlo in modo base anche senza praticamente 
 
 Se opti per non avvalerti di git (oh che peccato), puoi comunque fruire
 di quanto offerto in questa repo come di un tutorial per predisporti all'esame.
-Se però vorrai cimentarti con l'esercizio come all'esame dovrai quantomeno scaricarti i materiali in locale poichè i Jupyther Notebooks non possono essere eseguiti da GitHub.
+Se però vorrai cimentarti con l'esercizio come all'esame dovrai quantomeno scaricarti i materiali in locale poichè i Jupyter Notebooks non possono essere eseguiti da GitHub.
 Per fare il download, da questo repo su GitHub, da dentro il tuo browser, premi il bottone verde "Clone or Download" in alto a destra, scarica il file `.zip` in locale e poi decomprimilo. (_Nota:_ Quando la repo è ottenuta scaricando lo zip da GitHub e decomprimendolo, ne andrà poi subito cambiato il nome da `ROexamTesting-master` a `ROexamTesting`.)
 Se non ti pesa dover ripetere queste operazioni ad ogni aggiornamento, allora avere `git` non ti sarà necessario per poter testare ed utilizzare ogni cosa, e potrai comunque farci avere il tuo feedback e richieste di aiuto
 sia attraverso il canale Telegram che attraverso la pagina GitHub del repo.
