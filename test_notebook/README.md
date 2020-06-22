@@ -9,6 +9,6 @@ __ISTRUZIONI:__
 - il foglio `test_packages.ipynb`;
 - alcuni esercizi facsimile di un tema esame nella cartella `esameRO_2020-06-26_VR123456`: provare ad aprire i vari fogli ed eseguirli.
 
-Se appaiono degli errori, contattare Alice Raffaele via e-mail [alice.raffaele@univr.it](alice.raffaele@univr.it), o sul [gruppo Telegram del corso](https://t.me/RicercaOperativa2020) oppure sempre su Telegram ma in privato.
+Se appaiono degli errori, contattare Alice Raffaele via e-mail ([alice.raffaele@univr.it](alice.raffaele@univr.it)), o sul [gruppo Telegram del corso](https://t.me/RicercaOperativa2020) oppure sempre su Telegram ma in privato.
 
 __Nota:__ è __fondamentale__ che abbiate risolto tutti gli eventuali problemi prima della simulazione del 26 giugno.
