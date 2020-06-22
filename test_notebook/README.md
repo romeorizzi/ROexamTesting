@@ -1,4 +1,4 @@
-# TEST DA FARE IN VISTA DELLA SIMULAZIONE DEL 26 GIUGNO 2020
+# TEST DA FARE PRIMA DELLA SIMULAZIONE DEL 26/06/2020
 
 __ISTRUZIONI:__
 1. Configurare un environment ad hoc per l'esame di RO seguendo la guida per il vostro sistema operativo:
