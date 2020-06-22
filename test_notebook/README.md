@@ -11,4 +11,4 @@ __ISTRUZIONI:__
 
 Se appaiono degli errori, contattare Alice Raffaele via [e-mail](alice.raffaele@univr.it), o sul [gruppo Telegram del corso](https://t.me/RicercaOperativa2020) oppure sempre su Telegram ma in privato.
 
-__Nota:__ è importante che abbiate risolto tutti gli eventuali problemi prima della simulazione del 26 giugno.
+__Nota:__ è __fondamentale__ che abbiate risolto tutti gli eventuali problemi prima della simulazione del 26 giugno.
