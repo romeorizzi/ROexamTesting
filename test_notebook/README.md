@@ -1,7 +1,7 @@
 # TEST DA FARE PRIMA DELLA SIMULAZIONE DEL 26/06/2020
 
 __ISTRUZIONI:__
-1. Configurare un environment ad hoc per l'esame di RO seguendo la guida per il vostro sistema operativo:
+1. Installare Anaconda e configurare un environment ad hoc per l'esame di RO, seguendo la guida per il vostro sistema operativo:
 - [Linux](https://github.com/romeorizzi/ROexamTesting/wiki/Guida-alle-installazioni-su-Linux)
 - [Mac OS](https://github.com/romeorizzi/ROexamTesting/wiki/Guida-alle-installazioni-su-Mac)
 - [Windows](https://github.com/romeorizzi/ROexamTesting/wiki/Guida-alle-installazioni-su-Windows)
