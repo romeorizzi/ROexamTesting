@@ -1,0 +1,440 @@
+<!doctype html>
+<html>
+    <head>
+        <title>Mappa Esame</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="style/main.css">
+        <!-- https://fontawesome.com/icons?d=gallery -->
+        <link rel="stylesheet" href="style/all.css">
+        <script src="js/main.js"></script>
+        <link rel="icon" type="image/png" href="favicon.png">
+    </head>
+    <body>
+        <h1 class="center"><i class="fas fa-map-marked-alt"></i> Mappa Esame</h1>
+        <button class="button right" onclick="get_scores();">Aggiorna mappa</button>
+<button class="accordion main_exercise">
+    <div class="arrow-container">
+    <i class="fas fa-chevron-down"></i></div>
+    <div class="inline">
+        <div>
+            <h3 class="exname inline">Massima sottosequenza comune</h3>
+            <a class="link" target="_blank" href="http://127.0.0.1:8888/notebooks/esercizio_01/modo_verif/Esercizio_01.ipynb">Apri in Jupyter <i class="fas fa-link"></i></a>
+        </div>
+        <div class="competence">programmazione dinamica</div> <div class="competence">sottoproblemi e ricorrenze</div> <div class="competence">algoritmi classici su stringhe</div> 
+    </div>
+    <div class="score">
+      <div class="box">
+          <h3 class="section">Modalità di sottoposizione: </h3>
+          <select name="submit_mode" class="submit_mode">
+              <option value="1">Verificatore</option>
+          </select>
+      </div>
+      <div class="box"> <h3 class="section">Certi</h3><span class="certpoints">0</span> </div>
+      <div class="box"> <h3 class="section">Autostimati</h3> <span class="maxpoints">0</span> </div>
+      <div class="box"> <h3 class="section">Totali</h3><span class="maxpoints">50pts</span></div>
+    </div>
+
+</button>
+<div class="panel">
+<button class="accordion">
+    <i class="fas fa-chevron-down"></i>
+    <div class="subexname">Task 1</div>
+    <div class="score">
+
+        Certi:<span class="certpoints">0</span>
+        Autostimati:<select class="select_points">
+            <option value="0">0</option>
+<option value="1">1</option>
+<option value="2">2</option>
+<option value="3">3</option>
+<option value="4">4</option>
+<option value="5">5</option>
+<option value="6">6</option>
+<option value="7">7</option>
+<option value="8">8</option>
+<option value="9">9</option>
+<option value="10">10</option>
+
+            <!--
+            <option value="0">0</option>
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            -->
+        </select>
+        / Totali:<span class="maxpoints">10pts</span>
+    </div>
+</button>
+<div class="panel">
+<p>Trovare la massima comune tra le due stringhe s = CCCCCAAACTATATATA e t = GTCACGTACGTACAAAA</p>
+<b> Note Personali</b>
+<textarea class="notes"></textarea>
+</div>
+
+<button class="accordion">
+    <i class="fas fa-chevron-down"></i>
+    <div class="subexname">Task 2</div>
+    <div class="score">
+
+        Certi:<span class="certpoints">0</span>
+        Autostimati:<select class="select_points">
+            <option value="0">0</option>
+<option value="1">1</option>
+<option value="2">2</option>
+<option value="3">3</option>
+<option value="4">4</option>
+<option value="5">5</option>
+<option value="6">6</option>
+<option value="7">7</option>
+<option value="8">8</option>
+<option value="9">9</option>
+<option value="10">10</option>
+
+            <!--
+            <option value="0">0</option>
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            -->
+        </select>
+        / Totali:<span class="maxpoints">10pts</span>
+    </div>
+</button>
+<div class="panel">
+<p>Trovare la massima sottosequenza comune utilizzando il prefisso t&#x27; = GTCACGTAC e s = CCCCCAAACTATATATA</p>
+<b> Note Personali</b>
+<textarea class="notes"></textarea>
+</div>
+
+<button class="accordion">
+    <i class="fas fa-chevron-down"></i>
+    <div class="subexname">Task 3</div>
+    <div class="score">
+
+        Certi:<span class="certpoints">0</span>
+        Autostimati:<select class="select_points">
+            <option value="0">0</option>
+<option value="1">1</option>
+<option value="2">2</option>
+<option value="3">3</option>
+<option value="4">4</option>
+<option value="5">5</option>
+<option value="6">6</option>
+<option value="7">7</option>
+<option value="8">8</option>
+<option value="9">9</option>
+<option value="10">10</option>
+
+            <!--
+            <option value="0">0</option>
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            -->
+        </select>
+        / Totali:<span class="maxpoints">10pts</span>
+    </div>
+</button>
+<div class="panel">
+<p>Trovare la massima sottosequenza comune utilizzando il suffisso s&#x27; = CTATATATA e t = GTCACGTACGTACAAAA</p>
+<b> Note Personali</b>
+<textarea class="notes"></textarea>
+</div>
+
+<button class="accordion">
+    <i class="fas fa-chevron-down"></i>
+    <div class="subexname">Task 4</div>
+    <div class="score">
+
+        Certi:<span class="certpoints">0</span>
+        Autostimati:<select class="select_points">
+            <option value="0">0</option>
+<option value="1">1</option>
+<option value="2">2</option>
+<option value="3">3</option>
+<option value="4">4</option>
+<option value="5">5</option>
+<option value="6">6</option>
+<option value="7">7</option>
+<option value="8">8</option>
+<option value="9">9</option>
+<option value="10">10</option>
+
+            <!--
+            <option value="0">0</option>
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            -->
+        </select>
+        / Totali:<span class="maxpoints">10pts</span>
+    </div>
+</button>
+<div class="panel">
+<p>Trovare la massima sottosequenza comune tale che inizi con la lettera T utilizzando s = CCCCCAAACTATATATA e t = GTCACGTACGTACAAAA</p>
+<b> Note Personali</b>
+<textarea class="notes"></textarea>
+</div>
+
+<button class="accordion">
+    <i class="fas fa-chevron-down"></i>
+    <div class="subexname">Task 5</div>
+    <div class="score">
+
+        Certi:<span class="certpoints">0</span>
+        Autostimati:<select class="select_points">
+            <option value="0">0</option>
+<option value="1">1</option>
+<option value="2">2</option>
+<option value="3">3</option>
+<option value="4">4</option>
+<option value="5">5</option>
+<option value="6">6</option>
+<option value="7">7</option>
+<option value="8">8</option>
+<option value="9">9</option>
+<option value="10">10</option>
+
+            <!--
+            <option value="0">0</option>
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            -->
+        </select>
+        / Totali:<span class="maxpoints">10pts</span>
+    </div>
+</button>
+<div class="panel">
+<p>Trovare la massima sottosequenza comune tale che finisca con la lettera C utilizzando s = CCCCCAAACTATATATA e t = GTCACGTACGTACAAAA</p>
+<b> Note Personali</b>
+<textarea class="notes"></textarea>
+</div>
+
+
+</div>
+<button class="accordion main_exercise">
+    <div class="arrow-container">
+    <i class="fas fa-chevron-down"></i></div>
+    <div class="inline">
+        <div>
+            <h3 class="exname inline">Planarità di un grafo</h3>
+            <a class="link" target="_blank" href="http://127.0.0.1:8888/notebooks/esercizio_02/modo_applet/Esercizio_02.ipynb">Apri in Jupyter <i class="fas fa-link"></i></a>
+        </div>
+        <div class="competence">grafi</div> <div class="competence">buone caratterizzazioni</div> <div class="competence">forbidden topological minors</div> <div class="competence">embeddings</div> 
+    </div>
+    <div class="score">
+      <div class="box">
+          <h3 class="section">Modalità di sottoposizione: </h3>
+          <select name="submit_mode" class="submit_mode">
+              <option value="1">Applet</option>
+          </select>
+      </div>
+      <div class="box"> <h3 class="section">Certi</h3><span class="certpoints">0</span> </div>
+      <div class="box"> <h3 class="section">Autostimati</h3> <span class="maxpoints">0</span> </div>
+      <div class="box"> <h3 class="section">Totali</h3><span class="maxpoints">20pts</span></div>
+    </div>
+
+</button>
+<div class="panel">
+<button class="accordion">
+    <i class="fas fa-chevron-down"></i>
+    <div class="subexname">Task 1</div>
+    <div class="score">
+
+        Certi:<span class="certpoints">0</span>
+        Autostimati:<select class="select_points">
+            <option value="0">0</option>
+<option value="1">1</option>
+<option value="2">2</option>
+<option value="3">3</option>
+<option value="4">4</option>
+<option value="5">5</option>
+<option value="6">6</option>
+<option value="7">7</option>
+<option value="8">8</option>
+<option value="9">9</option>
+<option value="10">10</option>
+<option value="11">11</option>
+<option value="12">12</option>
+<option value="13">13</option>
+<option value="14">14</option>
+<option value="15">15</option>
+<option value="16">16</option>
+<option value="17">17</option>
+<option value="18">18</option>
+<option value="19">19</option>
+<option value="20">20</option>
+
+            <!--
+            <option value="0">0</option>
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            -->
+        </select>
+        / Totali:<span class="maxpoints">20pts</span>
+    </div>
+</button>
+<div class="panel">
+<p>Fornire un planar embedding di G</p>
+<b> Note Personali</b>
+<textarea class="notes"></textarea>
+</div>
+
+
+</div>
+<button class="accordion main_exercise">
+    <div class="arrow-container">
+    <i class="fas fa-chevron-down"></i></div>
+    <div class="inline">
+        <div>
+            <h3 class="exname inline">Programmazione lineare - Modellizzazione</h3>
+            <a class="link" target="_blank" href="http://127.0.0.1:8888/notebooks/esercizio_03/modo_libero/Esercizio_03.ipynb">Apri in Jupyter <i class="fas fa-link"></i></a>
+        </div>
+        <div class="competence">programmazione lineare intera</div> <div class="competence">modelling di un problema di ottimizzazione</div> <div class="competence">gestione di risorse</div> <div class="competence">utilizzo di software e solvers</div> 
+    </div>
+    <div class="score">
+      <div class="box">
+          <h3 class="section">Modalità di sottoposizione: </h3>
+          <select name="submit_mode" class="submit_mode">
+              <option value="1">Libera</option>
+          </select>
+      </div>
+      <div class="box"> <h3 class="section">Certi</h3><span class="certpoints">0</span> </div>
+      <div class="box"> <h3 class="section">Autostimati</h3> <span class="maxpoints">0</span> </div>
+      <div class="box"> <h3 class="section">Totali</h3><span class="maxpoints">40pts</span></div>
+    </div>
+
+</button>
+<div class="panel">
+<button class="accordion">
+    <i class="fas fa-chevron-down"></i>
+    <div class="subexname">Task 1</div>
+    <div class="score">
+
+        Certi:<span class="certpoints">0</span>
+        Autostimati:<select class="select_points">
+            <option value="0">0</option>
+<option value="1">1</option>
+<option value="2">2</option>
+<option value="3">3</option>
+<option value="4">4</option>
+<option value="5">5</option>
+<option value="6">6</option>
+<option value="7">7</option>
+<option value="8">8</option>
+<option value="9">9</option>
+<option value="10">10</option>
+<option value="11">11</option>
+<option value="12">12</option>
+<option value="13">13</option>
+<option value="14">14</option>
+<option value="15">15</option>
+<option value="16">16</option>
+<option value="17">17</option>
+<option value="18">18</option>
+<option value="19">19</option>
+<option value="20">20</option>
+
+            <!--
+            <option value="0">0</option>
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            -->
+        </select>
+        / Totali:<span class="maxpoints">20pts</span>
+    </div>
+</button>
+<div class="panel">
+<p>Formulare il problema come problema di Programmazione Lineare Intera, motivando le scelte compiute</p>
+<b> Note Personali</b>
+<textarea class="notes"></textarea>
+</div>
+
+<button class="accordion">
+    <i class="fas fa-chevron-down"></i>
+    <div class="subexname">Task 2</div>
+    <div class="score">
+
+        Certi:<span class="certpoints">0</span>
+        Autostimati:<select class="select_points">
+            <option value="0">0</option>
+<option value="1">1</option>
+<option value="2">2</option>
+<option value="3">3</option>
+<option value="4">4</option>
+<option value="5">5</option>
+<option value="6">6</option>
+<option value="7">7</option>
+<option value="8">8</option>
+<option value="9">9</option>
+<option value="10">10</option>
+<option value="11">11</option>
+<option value="12">12</option>
+<option value="13">13</option>
+<option value="14">14</option>
+<option value="15">15</option>
+<option value="16">16</option>
+<option value="17">17</option>
+<option value="18">18</option>
+<option value="19">19</option>
+<option value="20">20</option>
+
+            <!--
+            <option value="0">0</option>
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            -->
+        </select>
+        / Totali:<span class="maxpoints">20pts</span>
+    </div>
+</button>
+<div class="panel">
+<p>Risolvere il problema sfruttando la libreria Pulp</p>
+<b> Note Personali</b>
+<textarea class="notes"></textarea>
+</div>
+
+
+</div>
+    
+    <br>
+<!--
+<button class="collapse-all">Collassa albero</button>
+<button class="collapse-all">Espandi albero</button>
+-->
+<button class="button left" onclick="exportMap();">Genera Archivio da consegnare</button>
+<!--<button class="button right" onclick="clearStorage();">Cancella Mappa</button>-->
+<br>
+<div>
+<div style="width:100%; height:50px"></div>
+<div>
+
+    <p class="blockcenter center">Esame di Ricerca Operativa</p> 
+    
+    <p>
+        <b>Informazioni</b>
+        <br>
+        Questa mappa pu&ograve; essere utilizzata per prendere tue note sullo svolgimento degli esercizi.
+        <br>
+        Valuta tu, se ti viene utile, compilare la cella col punteggio (auto-)stimato per mantenere un quadro sul punteggio complessivo raccolto e gestione presente del tuo esame.
+        <br>
+        Al termine dell'esame premi il tasto "Genera Archivio da consegnare"
+        <br>
+        Verrà generata una cartella "consegna_esameRO-2020-09-25" contenente due file:<br>
+        - il file zip è l'archivio compresso contenente tutto il tuo lavoro;<br>
+        - il file "firma_digitale.txt" contiene invece la firma digitale di tale archivio compresso.<br>
+        <br>
+        Se la tua connessione &egrave; buona, puoi mandarci semplicemente l'archivio compresso. In caso contrario, sar&agrave; possibile sottomettere anche se hai poca o nessuna banda in upload: basta che ci invii la firma digitale entro i 
+        tempi concordati per la consegna. Le modalità previste per l'invio sono spiegate entro lo stesso file "firma_digitale.txt"<br>
+        <b>NOTA</b>: Non modificare l'archivio compresso, che dovrai far pervenire entro un paio di giorni. Non dovesse arrivarci entro i tempi della consegna, potremo comunque ritenerlo valido solo se la sua firma digitale corrisponde a quella che ci hai mandato entro i termini della consegna.<br>
+
+    </p> 
+    
+</div>
+</body>
+</html>
