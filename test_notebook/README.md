@@ -1,6 +1,6 @@
-# TEST DA FARE PRIMA DELL'APPELLO DI ESAME:
+# TEST DA FARE PRIMA DELL'APPELLO DI ESAME
 
-__ISTRUZIONI:__
+## ISTRUZIONI:
 1. Installare Anaconda e configurare un environment ad hoc per l'esame di RO, seguendo la guida per il vostro sistema operativo:
 - [Linux](https://github.com/romeorizzi/ROexamTesting/wiki/Guida-alle-installazioni-su-Linux)
 - [Mac OS](https://github.com/romeorizzi/ROexamTesting/wiki/Guida-alle-installazioni-su-Mac)
