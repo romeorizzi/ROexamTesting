@@ -1,14 +1,14 @@
-# TEST DA FARE PRIMA DELLA SIMULAZIONE DEL 26/06/2020
+# TEST DA FARE PRIMA DELL'APPELLO DI ESAME:
 
 __ISTRUZIONI:__
 1. Installare Anaconda e configurare un environment ad hoc per l'esame di RO, seguendo la guida per il vostro sistema operativo:
 - [Linux](https://github.com/romeorizzi/ROexamTesting/wiki/Guida-alle-installazioni-su-Linux)
 - [Mac OS](https://github.com/romeorizzi/ROexamTesting/wiki/Guida-alle-installazioni-su-Mac)
 - [Windows](https://github.com/romeorizzi/ROexamTesting/wiki/Guida-alle-installazioni-su-Windows)
-2. Una volta configurato l'environment ROexam, attivarlo e posizionarsi nella cartella `ROexamTesting/test_notebook` per testare:
-- il foglio `test_packages.ipynb`;
-- alcuni esercizi facsimile di un tema esame nella cartella `esameRO_2020-06-26_VR123456`: provare ad aprire i vari fogli ed eseguire la prima cella, cliccando poi sul bottone "Avvia esercizio"; a quel punto spariranno le celle di codice e vi resteranno solo il testo e le richieste da svolgere. Potrete rispondere usando i bottoni sotto ogni richiesta per aggiungere una cella di risposta (di tipo Code, Markdown o Raw, oppure inserendo un'immagine nella cartella allegati e riferendola lì).
+2. Una volta configurato l'environment ROexam, attivarlo con il comando `conda activate ROexam` e posizionarsi nella cartella `ROexamTesting/test_notebook` per fare due test.
+2.1. Usare il comando `jupyter-notebook` per aprire Jupyter nel browser, e aprire il foglio `test_packages.ipynb`. Questo foglio contiene solo una cella che, all'avvio, sarà eseguita per verificare che tutti i package siano stati installati correttamente. In caso di messaggi di errore, provare prima a consultare la guida di [Troubleshooting]() oppure contattarci.
+2.2. Aprendo una nuova finestra di terminale, attivare l'ambiente con il comando `conda activate ROexam` e posizionarsi nella cartella `ROexamTesting/test_notebook\esame_RO-2021-02-18_id123456`, che rappresenta un facsimile di un tema d'esame, per familiarizzare con le procedure di [avvio](https://github.com/romeorizzi/ROexamTesting/wiki/Istruzioni-per-l'avvio-dell'esame) e [consegna](https://github.com/romeorizzi/ROexamTesting/wiki/Istruzioni-per-la-riconsegna-dell'esame) seguendo le rispettive guide.
 
-Se appaiono degli errori, contattare Alice Raffaele via e-mail ([alice.raffaele@univr.it](alice.raffaele@univr.it)), o sul [gruppo Telegram del corso](https://t.me/RicercaOperativa2020) oppure sempre su Telegram ma in privato.
+In caso di errori o messaggi anomali, contattare Alice Raffaele via e-mail ([alice.raffaele@univr.it](alice.raffaele@univr.it)), o sul [gruppo Telegram del corso](https://t.me/RicercaOperativa2020) oppure sempre su Telegram ma in privato.
 
-__Nota:__ è __fondamentale__ che abbiate risolto tutti gli eventuali problemi prima della simulazione del 26 giugno.
+__Nota:__ è __fondamentale__ che abbiate familiarizzato con le procedure di avvio e di consegna __prima__ del giorno dell'esame.
