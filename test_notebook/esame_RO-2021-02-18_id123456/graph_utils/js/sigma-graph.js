@@ -25,6 +25,7 @@ var size_edge = 1;
 var size_node = 2;
 var directed = false;
 var $n = $exercise;
+var multiple_sel = false;
 centerX = document.getElementById('$container').offsetLeft + document.getElementById('$container').offsetWidth / 2;
 centerY = document.getElementById('$container').offsetTop + document.getElementById('$container').offsetHeight / 2;
 function sleep(milliseconds) {
@@ -62,28 +63,24 @@ $s = new sigma({
         arrowSizeRatio: 5,
         sideMargin: 15,
         autoRescale: false,
-        rescaleIgnoreSize: true,
+        rescaleIgnoreSize: false,
         enableHovering: true,
-        autoResize: true,
+        autoResize: false,
         defaultEdgeLabelSize: 12,
         defaultLabelSize: 12,
-        labelThreshold: 2,
-        //edgeHoverPrecision:10,
+        labelThreshold: 1,
         edgeHoverSizeRatio: 1,
         edgeHoverExtremities: false,
-        edgeLabelSize: 'proportional',
+        edgeLabelSize: 'fixed',
         labelSizeRatio: 3,
-        defaultLabelSize: 17
+        defaultLabelSize: 17,
     }
 });
-//window.alert($s.settings)
-$s.cameras[0].goTo({ x: $x, y: $y, angle:0, ratio: 0.8 });
-$s.cameras[0].bind('coordinatesUpdated', function(e) {
-   if ($s.cameras[0].x < $x) $s.cameras[0].x = $x;
-   if ($s.cameras[0].y < $y) $s.cameras[0].y = $y;
-   if ($s.cameras[0].x > $x) $s.cameras[0].x = $x;
-   if ($s.cameras[0].y > $y) $s.cameras[0].y = $y;
-});
+
+
+
+$s.cameras[0].goTo({ x: 1200,y: -100, angle:0, ratio: 0.9 });
+// Fully disable autoRescale
 //pezzi di arco
 var ef = $ef;
 var nf = $nf;
@@ -100,7 +97,7 @@ function sleep(milliseconds) {
 }
 
 if (not_editable[0] == "true") {
-    $s.settings('enableCamera', false)
+    
     $s.settings('enableHovering', false)
 }
 
@@ -463,6 +460,386 @@ try {
         remove_edge = true;
         remove_node = false;
         set_weight = false;
+    });
+} catch (e) {};
+
+//multiple sel
+try {
+    document.getElementById("btn_multiple_sel" + $n).addEventListener("click", function() {
+        multiple_sel = !multiple_sel;
+    });
+} catch (e) {};
+
+//download svg
+try {
+    document.getElementById("download_svg" + $n).addEventListener("click", function() {
+        
+        var nodes = $s.graph.nodes();
+        var edges = $s.graph.edges();
+        var map = {};
+        
+        var min_x;
+        var min_y;
+        var max_x;
+        var max_y;
+
+        var i = 0;
+        for(;i< nodes.length; i++){
+            map[nodes[i].id]=nodes[i];
+            
+            if(!min_x || nodes[i].x < min_x){
+                min_x = nodes[i].x;
+            }
+
+            if(!min_y || nodes[i].y < min_y){
+                min_y = nodes[i].y;
+            }
+
+            if(!max_x || nodes[i].x > max_x){
+                max_x = nodes[i].x;
+            }
+
+            if(!max_y || nodes[i].y > max_y){
+                max_y = nodes[i].y;
+            }
+        }
+
+        max_x= max_x-min_x+60;
+        max_y= max_y-min_y+60;
+        
+        var svg_namespace = "http://www.w3.org/2000/svg";
+        
+        var preface = '<?xml version="1.0" encoding="utf-8"?>\n<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">\n';
+        var svg = document.createElementNS(svg_namespace, "svg");
+        svg.setAttribute("xmlns", svg_namespace);
+        svg.setAttribute("xmlns:xlink", "http://www.w3.org/1999/xlink");
+        svg.setAttribute("version", "1.1");
+        svg.setAttribute("width", max_x+"px");
+        svg.setAttribute("height", max_y+"px");
+        svg.setAttribute("x", "0px");
+        svg.setAttribute("y", "0px");
+        
+        
+        var defs = document.createElementNS(svg_namespace, "defs");
+        svg.appendChild(defs);
+        
+        var marker = document.createElementNS(svg_namespace, "marker");
+        marker.setAttribute("id", "arrowhead_gray");
+        marker.setAttribute("fill", "#828282");
+        marker.setAttribute("markerWidth", "3");
+        marker.setAttribute("markerHeight", "3");
+        marker.setAttribute("refX", "3");
+        marker.setAttribute("refY", "1.5");
+        marker.setAttribute("orient", "auto");
+        defs.appendChild(marker);
+        
+        var polygon = document.createElementNS(svg_namespace, "polygon");
+        polygon.setAttribute("points", "0 0, 3 1.5, 0 3");
+        marker.appendChild(polygon);
+        
+        marker = document.createElementNS(svg_namespace, "marker");
+        marker.setAttribute("id", "arrowhead_red");
+        marker.setAttribute("fill", "#FF5722");
+        marker.setAttribute("markerWidth", "3");
+        marker.setAttribute("markerHeight", "3");
+        marker.setAttribute("refX", "3");
+        marker.setAttribute("refY", "1.5");
+        marker.setAttribute("orient", "auto");
+        defs.appendChild(marker);
+        
+        polygon = document.createElementNS(svg_namespace, "polygon");
+        polygon.setAttribute("points", "0 0, 3 1.5, 0 3");
+        marker.appendChild(polygon);
+        
+        marker = document.createElementNS(svg_namespace, "marker");
+        marker.setAttribute("id", "arrowhead_yellow");
+        marker.setAttribute("fill", "#FFD600");
+        marker.setAttribute("markerWidth", "3");
+        marker.setAttribute("markerHeight", "3");
+        marker.setAttribute("refX", "3");
+        marker.setAttribute("refY", "1.5");
+        marker.setAttribute("orient", "auto");
+        defs.appendChild(marker);
+        
+        polygon = document.createElementNS(svg_namespace, "polygon");
+        polygon.setAttribute("points", "0 0, 3 1.5, 0 3");
+        marker.appendChild(polygon);
+        
+        var g_edge = document.createElementNS(svg_namespace, "g");
+        svg.appendChild(g_edge);
+        
+        var g_nodes = document.createElementNS(svg_namespace, "g");
+        svg.appendChild(g_nodes);
+        
+        var g_label = document.createElementNS(svg_namespace, "g");
+        svg.appendChild(g_label);
+        
+        for(i=0;i<nodes.length;i++){
+            var node = document.createElementNS(svg_namespace, 'circle');
+            var x = nodes[i].x-min_x+30;
+            var y = nodes[i].y-min_y+30;
+            
+            if(nodes[i].label){
+                node.setAttributeNS(null, 'data-node-id', nodes[i].id);
+                
+                var label = document.createElementNS(svg_namespace, 'text');
+                label.setAttribute("data-label-target", nodes[i].id);
+                label.setAttribute("font-size", "17");
+                label.setAttribute("font-family", "arial");
+                label.setAttribute("x", (x+7)+"");
+                label.setAttribute("y", (y+7)+"");
+                label.setAttribute("fill", "#000");
+                label.textContent = nodes[i].label;
+                g_label.appendChild(label);
+            }
+            node.setAttributeNS(null, 'cx', x);
+            node.setAttributeNS(null, 'cy', y);
+            node.setAttributeNS(null, 'r', "3");
+            node.setAttributeNS(null, 'fill', nodes[i].color);
+            g_nodes.appendChild(node);
+        }
+        
+        for(i=0;i<edges.length;i++){
+            var edge = document.createElementNS(svg_namespace, 'line');
+            var source = map[edges[i].source];
+            var target = map[edges[i].target];
+            
+            var source_x = source.x-min_x+30;
+            var source_y = source.y-min_y+30;
+            var target_x = target.x-min_x+30;
+            var target_y = target.y-min_y+30;
+            
+            //set line param
+            edge.setAttribute("data-edge-id", edges[i].id);
+            edge.setAttribute("stroke-width", "3");
+            var color = edges[i].color;
+            edge.setAttribute("stroke", color);
+            edge.setAttribute("x1", source_x+"");
+            edge.setAttribute("y1", source_y+"");
+            edge.setAttribute("x2", target_x+"");
+            edge.setAttribute("y2", target_y+"");
+            
+            if(edges[i].type === "arrow"){
+                var arrowhead;
+                if(color === "#828282"){
+                    arrowhead="url(#arrowhead_gray)";
+                }else if(color === "#FF5722"){
+                    arrowhead="url(#arrowhead_red)";
+                }else{
+                    arrowhead="url(#arrowhead_yellow)";
+                
+                }
+                edge.setAttribute("marker-end", arrowhead);
+            }
+            
+            if(edges[i].weight){
+                //var angle = Math.atan2(Math.abs(target_y - source_y), Math.abs(target_x - source_x)) * 180 / Math.PI;
+                
+                var label = document.createElementNS(svg_namespace, 'text');
+                label.setAttribute("data-label-target", edges[i].id);
+                label.setAttribute("font-size", "17");
+                label.setAttribute("font-family", "arial");
+                label.setAttribute("text-anchor", "middle");
+                label.setAttribute("x", (((source_x+target_x)/2)+7)+"");
+                label.setAttribute("y", (((source_y+target_y)/2)+7)+"");
+                label.setAttribute("fill", "#000");
+                //label.setAttribute("transform", "rotate("+angle+", "+(((source_x+target_x)/2)+7)+","+(((source_y+target_y)/2)+7)+")");
+                label.textContent = edges[i].weight;
+                g_label.appendChild(label);
+            }
+            
+            g_edge.appendChild(edge);
+        }
+        
+        var svgString = svg.outerHTML
+        var svgBlob = new Blob([preface,svgString], {type:"image/svg+xml;charset=utf-8"});
+        var svgUrl = URL.createObjectURL(svgBlob);
+        var downloadLink = document.createElement("a");
+        downloadLink.href = svgUrl;
+        downloadLink.download = "graph.svg";
+        document.body.appendChild(downloadLink);
+        downloadLink.click();
+        document.body.removeChild(downloadLink);
+        
+    });
+} catch (e) {};
+
+//download png
+try {
+    document.getElementById("download_png" + $n).addEventListener("click", function() {
+        $s.renderers[0].snapshot({
+            format: 'png',
+            background: 'white',
+            labels: true,
+            download: true,
+            filename: 'graph.png'
+        });
+        
+    });
+} catch (e) {};
+
+//download adj matrix
+try {
+    document.getElementById("download_adj" + $n).addEventListener("click", function() {
+        //assign node value from 0 to 1
+        var nodes = $s.graph.nodes();
+        
+        var map = {};
+        //hidden edge type arrow/line
+        var hidden_type={};
+        
+        var n_nodes=0;
+        var i=0;
+        for(; i < nodes.length; i++){
+            if(!nodes[i].label){
+                continue;
+            }
+            
+            n_nodes++;
+        }
+        
+        var adj = new Array(n_nodes);
+        i = 0;
+        var j = 0;
+        for(; i < nodes.length; i++){
+            if(!nodes[i].label){
+                continue;
+            }
+            
+            map[nodes[i].id] = j;
+            adj[j] = new Array(n_nodes);
+            j++;
+        }
+        
+        
+        var edges = $s.graph.edges();
+        
+        //hidden edge type arrow/line
+        var hidden_type={};
+        var weigthed_graph = false;
+        for(i=0; i < edges.length; i++){
+            var edge = edges[i];
+            
+            if(edge.label){
+                weigthed_graph=true;
+            }
+
+            //end segment
+            if(!(edge.source in map) && edge.target in map){
+               
+                var type = edge.type;
+                var list = dict_nf[edge.source];
+                
+                for(j=0;j<list.length;j++){
+                    
+                    if(list[j].includes("hidden")){
+                        hidden_type[list[j]]=type;
+                    }
+                }
+            }
+        }
+        
+        //building adj matrix
+        i = 0;
+        var max_label_length = 1;
+        for(; i < edges.length; i++){
+           
+            var edge = edges[i];
+            var label = edge.label;
+                
+            if(weigthed_graph){
+                if(!label){
+                    continue;
+                }
+            }else{
+                //To keep only the last segment on broken edge
+                if(!label && !(edge.target in map)){
+                    continue;
+                }
+            }
+            
+            if(!label){
+                label="1";
+            }
+            
+            if(label.length>max_label_length){
+                max_label_length=label.length;
+            }
+            
+            if(edge.source in map && edge.target in map){
+                
+                
+                adj[map[edge.source]][map[edge.target]] = label;
+                if(edge.type === "line"){
+                    adj[map[edge.target]][map[edge.source]] = label;
+                }
+            }else{
+                //hidden nodes
+                var list = dict_nf[edge.source];
+                var source = list[0];
+                var target = list[list.length-1];
+                adj[map[source]][map[target]] = label;
+                //if(source === list[list.length/2]){
+                if(hidden_type[edge.source] === "line"){
+                    adj[map[target]][map[source]] = label;
+                }
+            }
+        }
+        
+        // Create items array
+        var legend = Object.keys(map).map(function(key) {
+            return [key, map[key]];
+        });
+        
+        // Sort the array based on the second element
+        legend.sort(function(first, second) {
+            return first[1] - second[1];
+        });
+        
+        var adj_str = "  ";
+        for(i=0;i<adj.length;i++){
+            var k=0;
+            for(;k<max_label_length-legend[i][0].length || max_label_length-legend[i][0].length<0;k++){
+                adj_str+=" ";
+            }
+            adj_str+=legend[i][0]+" ";
+        }
+        
+        adj_str+="\r\n";
+        for(i=0;i<adj.length;i++){
+            var line = adj[i];
+            
+            adj_str+=legend[i][0]+" ";
+            
+            for(j=0;j<line.length;j++){
+                
+                var k = 0;
+                if(line[j]){
+                    for(;k<max_label_length-line[j].length || max_label_length-line[j].length<0;k++){
+                        adj_str+=" ";
+                    }
+                    adj_str+=line[j]+" ";
+                }else{
+                    for(;k<max_label_length-1 || max_label_length-1<0;k++){
+                        adj_str+=" ";
+                    }
+                    adj_str+="0 ";
+                }
+            }
+            adj_str+="\r\n";
+        }
+        
+        var element = document.createElement('a');
+        element.setAttribute('href', 'data:text/plain;charset=utf-8,' + encodeURIComponent(adj_str));
+        element.setAttribute('download', "adjmatrix.txt");
+
+        element.style.display = 'none';
+        document.body.appendChild(element);
+
+        element.click();
+
+        document.body.removeChild(element);
+        
     });
 } catch (e) {};
 

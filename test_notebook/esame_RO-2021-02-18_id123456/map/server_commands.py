@@ -9,7 +9,7 @@
 ####################################
 subdir = "modo_verif" # sotto-cartella dove prende i punti dei verificatori
 gruppo_telegram = "https://t.me/RicercaOperativa2020"
-date = "2020-09-30" #data dell'esame
+date = "2021-02-22" #data dell'esame
 
 
 import hashlib
@@ -41,7 +41,8 @@ def read_points(filename):
             return json.load(json_file)
     return None
 
-map_save_path = "map_export.txt"
+map_save_path = map_save_path = "../consegna_esameRO-" + date + "/map_export.txt"
+
 
 def zipdir(path, ziph):
     # ziph is zipfile handle
@@ -67,8 +68,6 @@ def handler_save_map(params):
 
     data = params["data"][0]
 
-    with open(map_save_path, "w") as f:
-        f.write(data)
     # generare nome della cartella dove collocare la consegna
     if os.path.exists('../consegna_esameRO-' + date):
         return "directory_error la cartella consegna_esameRO-" + date + " esiste già. Se vuoi procedere con nuova consegna rimuovila o spostala altrove."
@@ -79,8 +78,11 @@ def handler_save_map(params):
     zipf = zipfile.ZipFile(fname, 'w', zipfile.ZIP_DEFLATED)
     zipdir('.', zipf)
     zipf.close()
-
+    #salvataggio del file export_map.txt
+    with open(map_save_path, "w") as f:
+        f.write(data)
     sha1_str = sha1_file(fname)
+    #salvataggio della firma
     with open("../consegna_esameRO-" + date + "/firma_anticipata.txt", "w") as f:
         f.write(
 """

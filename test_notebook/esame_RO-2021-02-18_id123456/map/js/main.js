@@ -74,8 +74,8 @@ window.addEventListener("load", function(){
             }
 
             //attiva il messaggio di errore se non sono state confermate tutte le checkbox
-            var vis = checkAllConfirm() ? "none" : "block";
-            document.getElementById("submit-label").style.display = vis;
+            //var vis = checkAllConfirm() ? "none" : "block";
+            //document.getElementById("submit-label").style.display = vis;
         });
     });
 
@@ -103,7 +103,7 @@ window.addEventListener("load", function(){
 
             updateScores();
             saveSubmitModes();
-
+            changeLink();
             updateTotalScoreAll();
         });
         i++;
@@ -118,7 +118,7 @@ window.addEventListener("load", function(){
              //prevent click on select nodes
              if(event.target.tagName.toLowerCase() == "select" ||
                 event.target.classList.contains("confirm-checkbox") ||
-                event.target.parentNode.tagName.toLowerCase() == "option")
+                event.target.tagName.toLowerCase() == "option")
                 return;
 
 
@@ -230,23 +230,39 @@ function updateTotalScoreAll(){
 function exportMap()
 {
     //attiva il messaggio di errore se non sono state confermate tutte le checkbox
-    if(!checkAllConfirm())
+    /*if(!checkAllConfirm())
     {
         var vis = checkAllConfirm() ? "none" : "block";
         document.getElementById("submit-label").style.display = vis;
         alert("Conferma gli esercizi prima di esportare")
         return;
-    }
+    }*/
 
     console.log("exporting map");
     var exercises = document.querySelectorAll(".main_exercise");
     var out_exercises = [];
+    var out_confirm_list = "";
+    var check_consegna = true;
     exercises.forEach(function(ex){
-        var pointsElements = ex.querySelectorAll(".maxpoints");
-        var total_score = parseInt(pointsElements[0].innerHTML)
-        var total_score_max = parseInt(pointsElements[1].innerHTML)
-        var submit_mode_idx = ex.querySelector(".submit_mode").selectedIndex;
-        var submit_mode = ex.querySelector(".submit_mode").options[submit_mode_idx].innerHTML;
+        var checkbox = ex.querySelector(".confirm-checkbox");
+        if(checkbox.checked){
+            var pointsElements = ex.querySelectorAll(".maxpoints");
+            var total_score = parseInt(pointsElements[0].innerHTML)
+            var total_score_max = parseInt(pointsElements[1].innerHTML)
+            var submit_mode_idx = ex.querySelector(".submit_mode").selectedIndex;
+            var submit_mode = ex.querySelector(".submit_mode").options[submit_mode_idx].innerHTML;
+            var ex_name = ex.getElementsByTagName("h3")[0].innerHTML;
+            check_consegna  = true;
+        }
+        else {
+            var pointsElements = ex.querySelectorAll(".maxpoints");
+            var total_score = "0"
+            var total_score_max = parseInt(pointsElements[1].innerHTML)
+            var submit_mode_idx = "Nessuno";
+            var submit_mode = "Non Consegnato";
+            var ex_name = ex.getElementsByTagName("h3")[0].innerHTML;
+            check_consegna=false;
+        }
         //console.log("total_score" + total_score+"/"+total_score_max, submit_mode, submit_mode_idx);
 
         var panel = ex.nextElementSibling;
@@ -266,51 +282,56 @@ function exportMap()
             });
             //console.log("    score:" + task_score+"/"+task_max_score, task_notes)
         })
-
         out_exercises.push({
+            "exercise_name" : ex_name,
             "total_score": total_score,
             "total_score_max": total_score_max,
             "submit_mode": submit_mode,
             "submit_mode_index": submit_mode_idx,
             "tasks" : out_tasks,
-        })
+            })
+        
+
+        out_confirm_list+=(ex_name+" : " + submit_mode+"\n")
     })
 
 
     var out_string = JSON.stringify(out_exercises, null, 2);
     //console.log(out_string, encodeURI(out_string));
-    saveMapWithServer(out_string);
+    saveMapWithServer(out_string,out_confirm_list);
 
 }
 
-function saveMapWithServer(content) {
-    var client = new XMLHttpRequest();
-    console.log(window.location.href)
-    client.open("GET", "../server_command?type=save&data=" + encodeURI(content), true);
-    client.send();
-    client.onreadystatechange = function() {
-        if(this.readyState == this.HEADERS_RECEIVED) {
-            //basic download in case of error
-            var idx = client.statusText.indexOf(' ');
-            if(idx != -1)
-            {
-                var cmd = client.statusText.substr(0, idx); // "72"
-                var message = client.statusText.substr(idx+1); // "tocirah sneab"
+function saveMapWithServer(content,ex_info) {
+    if(confirm(ex_info)){
+        var client = new XMLHttpRequest();
+        console.log(window.location.href)
+        client.open("GET", "../server_command?type=save&data=" + encodeURI(content), true);
+        client.send();
+        client.onreadystatechange = function() {
+            if(this.readyState == this.HEADERS_RECEIVED) {
+                //basic download in case of error
+                var idx = client.statusText.indexOf(' ');
+                if(idx != -1)
+                {
+                    var cmd = client.statusText.substr(0, idx); // "72"
+                    var message = client.statusText.substr(idx+1); // "tocirah sneab"
 
-                if(cmd == "done"){
-                    alert(message);
-                    //alert("Archivio dell'esame generato correttamente (lo trovi nella cartella 'consegna_esameRO-2020-07-27', sorella del folder entro il quale hai svolto il tuo esame. Se vuoi riprodurre una nuova consegna devi prima rimuovere o spostare questa cartella.)\n\nProcedi subito alla tua sottomissione e chiusura dell'esame (istruzion nel file 'firma_anticipata.txt' che trovi nella cartella 'consegna_esameRO-2020-07-27')")
-                }
-                else if(cmd == "directory_error"){
-                    alert(message);
+                    if(cmd == "done"){
+                        alert(message);
+                        //alert("Archivio dell'esame generato correttamente (lo trovi nella cartella 'consegna_esameRO-2020-07-27', sorella del folder entro il quale hai svolto il tuo esame. Se vuoi riprodurre una nuova consegna devi prima rimuovere o spostare questa cartella.)\n\nProcedi subito alla tua sottomissione e chiusura dell'esame (istruzion nel file 'firma_anticipata.txt' che trovi nella cartella 'consegna_esameRO-2020-07-27')")
+                    }
+                    else if(cmd == "directory_error"){
+                        alert(message);
+                    }
+                    else{
+                        download(content,"mappa_esportata.yaml", "text/plain;charset=utf-8");
+                        alert(client.statusText + " Mappa scaricata sul browser, ricordati di inviarla insieme all'esame.")
+                    }
                 }
                 else{
-                    download(content,"mappa_esportata.yaml", "text/plain;charset=utf-8");
-                    alert(client.statusText + " Mappa scaricata sul browser, ricordati di inviarla insieme all'esame.")
+                    alert(client.statusText);
                 }
-            }
-            else{
-                alert(client.statusText);
             }
         }
     }
@@ -429,6 +450,24 @@ function load()
     }
 
     updateTotalScoreAll();
+}
+
+//change jupyter link based on the selected submition mode
+function changeLink() {
+    var exercises = document.querySelectorAll(".main_exercise")
+    exercises.forEach(function(exercise) {
+        actual_mode=exercise.querySelector(".submit_mode").selectedIndex;
+        str_actual_mode=actual_mode.toString()
+        new_link=exercise.querySelector('[name ='+"\""+str_actual_mode+"\""+']');
+        //new_link=exercise.getElementsByTagName(str_actual_mode)
+        value=new_link.value
+        var link = exercise.getElementsByClassName("link")
+        link[0].setAttribute("href",value);
+        //console.log(link)
+        //link.href=value
+        //var prov2 = exercise.getElementsByClassName("link");
+        //console.log(prov2)
+    })
 }
 
       //load selected score for each exercise

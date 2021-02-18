@@ -11,7 +11,6 @@
 
   sigma.utils.pkg('sigma.plugins');
 
-
   /**
    * This function will add `mousedown`, `mouseup` & `mousemove` events to the
    * nodes in the `overNode`event to perform drag & drop operations. It uses
@@ -162,7 +161,7 @@
         _body.addEventListener('mouseup', nodeMouseUp);
           
         //if ctrl key isn't pressed delete all the node in memory
-        if(!event.ctrlKey){
+        if(!multiple_sel){
           _nodeList.forEach(function(entry) {
               entry.size=size_node;
             }               
@@ -223,6 +222,7 @@
           renderer: _renderer
         });
       }
+
       _self.dispatchEvent('dragend', {
         node: _node,
         captor: event,
